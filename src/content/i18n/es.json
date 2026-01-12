@@ -1,7 +1,7 @@
 {
   "nav": {
-    "solutions": "Solutions",
-    "factory": "Factory",
+    "solutions": "Servicios",
+    "factory": "Productos",
     "contact": "Contacto"
   },
   "hero": {
@@ -29,7 +29,8 @@
   },
   "solutions": {
     "label": "02 — Servicios",
-    "title": "Dinnartec Solutions",
+    "titlePrefix": "Dinnartec",
+    "titleHighlight": "Solutions",
     "subtitle": "Optimizamos negocios con tecnología e IA.",
     "description": "Identificamos ineficiencias, diseñamos estrategias e implementamos soluciones que generan impacto real: más ingresos, menos costos, mayor eficiencia.",
     "tagline": "No vendemos horas. Vendemos resultados.",
@@ -51,7 +52,8 @@
   },
   "factory": {
     "label": "03 — Productos",
-    "title": "Dinnartec Factory",
+    "titlePrefix": "Dinnartec",
+    "titleHighlight": "Factory",
     "subtitle": "Nuestra vertical de productos propios.",
     "description": "Los mejores productos no nacen de ideas — nacen de fricción real.",
     "content": "Factory toma los patrones que detectamos resolviendo problemas y los convierte en productos independientes que escalan globalmente.",
@@ -74,6 +76,9 @@
     "alternative": "O escríbenos a"
   },
   "footer": {
+    "tagline": "Innovando el futuro, mejorando el presente.",
+    "navigation": "Navegación",
+    "connect": "Conecta",
     "copyright": "© 2026 Dinnartec. Todos los derechos reservados."
   }
 }

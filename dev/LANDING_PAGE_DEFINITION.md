@@ -264,13 +264,13 @@ Or email us directly at dinnartec@gmail.com
 
 ## Pending Items
 
-- [ ] Calendly link for scheduling
+- [x] Calendly link for scheduling
 - [x] Domain: dinnartec.com (purchased)
-- [ ] Social media links
+- [x] Social media links
 - [ ] Logo (visual version)
 - [ ] Brand colors (currently B&W, may evolve)
-- [ ] Hosting setup (likely Vercel)
-- [ ] Form backend (email service)
+- [x] Hosting setup (Vercel)
+- [x] Form backend (Resend)
 
 ---
 

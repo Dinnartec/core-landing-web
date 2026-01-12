@@ -6,7 +6,8 @@ interface SolutionsSectionProps {
   lang: Locale
   translations: {
     label: string
-    title: string
+    titlePrefix: string
+    titleHighlight: string
     subtitle: string
     description: string
     tagline: string
@@ -48,8 +49,9 @@ export function SolutionsSection({ translations }: SolutionsSectionProps) {
             <span className="font-body text-xs font-medium uppercase tracking-widest text-white/50">
               {translations.label}
             </span>
-            <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-              {translations.title}
+            <h2 className="mt-4 font-display text-4xl leading-tight tracking-tight md:text-5xl lg:text-6xl">
+              <span className="font-normal">{translations.titlePrefix}</span>{' '}
+              <span className="font-bold">{translations.titleHighlight}</span>
             </h2>
             <p className="mt-4 font-display text-xl font-medium text-white/70 md:text-2xl">
               {translations.subtitle}

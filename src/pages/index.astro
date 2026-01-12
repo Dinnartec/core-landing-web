@@ -60,7 +60,8 @@ const t = getTranslations(lang)
       lang={lang}
       translations={{
         label: t('solutions.label'),
-        title: t('solutions.title'),
+        titlePrefix: t('solutions.titlePrefix'),
+        titleHighlight: t('solutions.titleHighlight'),
         subtitle: t('solutions.subtitle'),
         description: t('solutions.description'),
         tagline: t('solutions.tagline'),
@@ -86,7 +87,8 @@ const t = getTranslations(lang)
       lang={lang}
       translations={{
         label: t('factory.label'),
-        title: t('factory.title'),
+        titlePrefix: t('factory.titlePrefix'),
+        titleHighlight: t('factory.titleHighlight'),
         subtitle: t('factory.subtitle'),
         description: t('factory.description'),
         content: t('factory.content'),
@@ -119,6 +121,9 @@ const t = getTranslations(lang)
   <Footer
     lang={lang}
     translations={{
+      tagline: t('footer.tagline'),
+      navigation: t('footer.navigation'),
+      connect: t('footer.connect'),
       copyright: t('footer.copyright'),
     }}
     navTranslations={{
