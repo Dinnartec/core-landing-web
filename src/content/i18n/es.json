@@ -13,6 +13,7 @@
     "badge": "Empresa de Tecnología"
   },
   "about": {
+    "label": "01 — Acerca de",
     "title": "¿Qué es Dinnartec?",
     "description": "Dinnartec es una empresa de tecnología fundada por desarrolladores con un objetivo: construir soluciones que transformen industrias.",
     "content": "No somos una agencia tradicional. Somos builders que combinan ejecución técnica con pensamiento estratégico. Nacimos con la mentalidad de las grandes empresas tecnológicas, entendiendo que el camino se construye paso a paso.",
@@ -27,6 +28,7 @@
     ]
   },
   "solutions": {
+    "label": "02 — Servicios",
     "title": "Dinnartec Solutions",
     "subtitle": "Optimizamos negocios con tecnología e IA.",
     "description": "Identificamos ineficiencias, diseñamos estrategias e implementamos soluciones que generan impacto real: más ingresos, menos costos, mayor eficiencia.",
@@ -48,13 +50,16 @@
     }
   },
   "factory": {
+    "label": "03 — Productos",
     "title": "Dinnartec Factory",
     "subtitle": "Nuestra vertical de productos propios.",
     "description": "Los mejores productos no nacen de ideas — nacen de fricción real.",
     "content": "Factory toma los patrones que detectamos resolviendo problemas y los convierte en productos independientes que escalan globalmente.",
-    "status": "Estamos construyendo. Pronto verás más."
+    "status": "Estamos construyendo. Pronto verás más.",
+    "badge": "En Desarrollo"
   },
   "contact": {
+    "label": "04 — Contacto",
     "title": "Construyamos algo juntos",
     "description": "¿Tienes un proyecto en mente? ¿Quieres optimizar tu negocio? Hablemos.",
     "cta": "Agenda una llamada",

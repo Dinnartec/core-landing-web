@@ -5,6 +5,7 @@ import type { Locale } from '@/types'
 interface SolutionsSectionProps {
   lang: Locale
   translations: {
+    label: string
     title: string
     subtitle: string
     description: string
@@ -45,7 +46,7 @@ export function SolutionsSection({ translations }: SolutionsSectionProps) {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <span className="font-body text-xs font-medium uppercase tracking-widest text-white/50">
-              02 — Services
+              {translations.label}
             </span>
             <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
               {translations.title}

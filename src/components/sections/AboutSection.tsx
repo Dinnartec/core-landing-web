@@ -17,6 +17,7 @@ interface PillarItem {
 interface AboutSectionProps {
   lang: Locale
   translations: {
+    label: string
     title: string
     description: string
     content: string
@@ -43,7 +44,7 @@ export function AboutSection({ translations }: AboutSectionProps) {
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
           <div>
             <span className="font-body text-xs font-medium uppercase tracking-widest text-muted">
-              01 — About
+              {translations.label}
             </span>
             <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight md:text-5xl">
               {translations.title}
