@@ -9,14 +9,6 @@
     --color-text: #000000;
     --color-text-muted: #666666;
     --color-border: #e5e5e5;
-
-    --font-sans: 'Inter', system-ui, sans-serif;
-
-    --section-padding-y: 5rem;
-    --section-padding-y-lg: 7.5rem;
-
-    --container-max-width: 1200px;
-    --container-padding: 1.5rem;
   }
 
   html {
@@ -24,11 +16,16 @@
   }
 
   body {
-    font-family: var(--font-sans);
+    font-family: 'Archivo', system-ui, sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #000;
+    color: #fff;
   }
 }
 
@@ -36,4 +33,24 @@
   .section {
     @apply py-20 lg:py-28;
   }
+
+  .animate-on-scroll {
+    opacity: 0;
+  }
+
+  .animate-on-scroll.is-visible {
+    animation: fade-up 0.6s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
 }
