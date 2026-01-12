@@ -1,25 +1,25 @@
 # Dinnartec Landing
 
-Landing page principal de Dinnartec.
+Main landing page for Dinnartec.
 
 **Live:** [dinnartec.com](https://dinnartec.com)
 
 ## Setup
 
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Levantar dev server
+# Start dev server
 npm run dev
 
-# Build producción
+# Production build
 npm run build
 ```
 
-## Variables de entorno
+## Environment Variables
 
-Crear archivo `.env` (ver `.env.example`):
+Create `.env` file (see `.env.example`):
 
 ```
 RESEND_API_KEY=re_xxxxxx
@@ -28,12 +28,12 @@ RESEND_API_KEY=re_xxxxxx
 ## Stack
 
 - **Astro** — Framework
-- **React** — Componentes interactivos
-- **Tailwind CSS** — Estilos
-- **Resend** — Envío de emails
+- **React** — Interactive components
+- **Tailwind CSS** — Styling
+- **Resend** — Email sending
 - **Vercel** — Hosting
 
-## Estructura
+## Structure
 
 ```
 src/
@@ -41,33 +41,33 @@ src/
 │   ├── layout/        # Header, Container, Footer
 │   ├── sections/      # Hero, About, Solutions, etc.
 │   └── ui/            # Button, Input, etc.
-├── content/i18n/      # Traducciones (es.json, en.json)
+├── content/i18n/      # Translations (es.json, en.json)
 ├── layouts/           # BaseLayout.astro
 ├── lib/               # utils, constants, i18n
 ├── pages/
-│   ├── index.astro    # Página ES (default)
-│   ├── en/index.astro # Página EN
+│   ├── index.astro    # ES page (default)
+│   ├── en/index.astro # EN page
 │   └── api/           # Endpoints (contact form)
 └── styles/            # globals.css
 ```
 
 ## i18n
 
-- Español es el idioma default (`/`)
-- Inglés está en `/en`
-- Traducciones en `src/content/i18n/`
+- Spanish is the default language (`/`)
+- English is at `/en`
+- Translations in `src/content/i18n/`
 
-Para agregar texto nuevo:
-1. Agregar key en `es.json` y `en.json`
-2. Usar `t('key.path')` en el componente
+To add new text:
+1. Add key in `es.json` and `en.json`
+2. Use `t('key.path')` in the component
 
 ## Deploy
 
-Push a `develop` → Vercel hace deploy automático.
+Push to `main` → Vercel auto-deploys.
 
 ## Docs
 
-- `dev/CLAUDE.md` — Guía de arquitectura y convenciones
-- `dev/CONTEXT.md` — Contexto de la empresa
-- `dev/LANDING_PAGE_DEFINITION.md` — Especificación de la landing
-- `dev/PENDING.md` — Tareas pendientes
+- `dev/CLAUDE.md` — Architecture and conventions guide
+- `dev/CONTEXT.md` — Company context
+- `dev/LANDING_PAGE_DEFINITION.md` — Landing page specification
+- `dev/PENDING.md` — Pending tasks
