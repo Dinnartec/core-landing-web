@@ -7,6 +7,7 @@ import type { Locale, FormState } from '@/types'
 interface ContactSectionProps {
   lang: Locale
   translations: {
+    label: string
     title: string
     description: string
     cta: string
@@ -72,7 +73,7 @@ export function ContactSection({ translations }: ContactSectionProps) {
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
           <div>
             <span className="font-body text-xs font-medium uppercase tracking-widest text-white/50">
-              04 — Contact
+              {translations.label}
             </span>
 
             <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">

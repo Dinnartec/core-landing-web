@@ -4,11 +4,13 @@ import type { Locale } from '@/types'
 interface FactorySectionProps {
   lang: Locale
   translations: {
+    label: string
     title: string
     subtitle: string
     description: string
     content: string
     status: string
+    badge: string
   }
 }
 
@@ -22,7 +24,7 @@ export function FactorySection({ translations }: FactorySectionProps) {
       <Container className="relative">
         <div className="mx-auto max-w-4xl text-center">
           <span className="font-body text-xs font-medium uppercase tracking-widest text-muted">
-            03 — Products
+            {translations.label}
           </span>
 
           <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
@@ -54,7 +56,7 @@ export function FactorySection({ translations }: FactorySectionProps) {
                   {translations.status}
                 </p>
                 <p className="font-body text-xs uppercase tracking-widest text-muted">
-                  In Development
+                  {translations.badge}
                 </p>
               </div>
 
