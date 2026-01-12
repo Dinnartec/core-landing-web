@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "factory": "Factory",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Dinnartec",
+    "tagline": "Innovando el futuro, mejorando el presente.",
+    "description": "Somos una empresa de tecnología que construye soluciones con IA para optimizar negocios y crear productos que escalan globalmente.",
+    "cta": "Agenda una llamada"
+  },
+  "about": {
+    "title": "¿Qué es Dinnartec?",
+    "description": "Dinnartec es una empresa de tecnología fundada por desarrolladores con un objetivo: construir soluciones que transformen industrias.",
+    "content": "No somos una agencia tradicional. Somos builders que combinan ejecución técnica con pensamiento estratégico. Nacimos con la mentalidad de las grandes empresas tecnológicas, entendiendo que el camino se construye paso a paso.",
+    "pillars": "Nuestro nombre representa nuestros pilares:",
+    "pillarsList": "Desarrollo · Investigación · Innovación · Adaptación · Revolución · Tecnología"
+  },
+  "solutions": {
+    "title": "Dinnartec Solutions",
+    "subtitle": "Optimizamos negocios con tecnología e IA.",
+    "description": "Identificamos ineficiencias, diseñamos estrategias e implementamos soluciones que generan impacto real: más ingresos, menos costos, mayor eficiencia.",
+    "tagline": "No vendemos horas. Vendemos resultados.",
+    "cta": "Hablemos de tu proyecto",
+    "steps": {
+      "diagnosis": {
+        "title": "Diagnóstico",
+        "description": "Analizamos tu negocio para identificar oportunidades de alto impacto"
+      },
+      "sprint": {
+        "title": "Sprint de Optimización",
+        "description": "Ejecutamos soluciones concretas en ciclos cortos (2-4 semanas)"
+      },
+      "support": {
+        "title": "Acompañamiento continuo",
+        "description": "Mantenemos, ajustamos y mejoramos las soluciones implementadas"
+      }
+    }
+  },
+  "factory": {
+    "title": "Dinnartec Factory",
+    "subtitle": "Nuestra vertical de productos propios.",
+    "description": "Los mejores productos no nacen de ideas — nacen de fricción real.",
+    "content": "Factory toma los patrones que detectamos resolviendo problemas y los convierte en productos independientes que escalan globalmente.",
+    "status": "Estamos construyendo. Pronto verás más."
+  },
+  "contact": {
+    "title": "Construyamos algo juntos",
+    "description": "¿Tienes un proyecto en mente? ¿Quieres optimizar tu negocio? Hablemos.",
+    "cta": "Agenda una llamada",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "success": "Mensaje enviado correctamente",
+      "error": "Error al enviar el mensaje"
+    },
+    "alternative": "O escríbenos directamente a"
+  },
+  "footer": {
+    "copyright": "© 2025 Dinnartec. Todos los derechos reservados."
+  }
+}

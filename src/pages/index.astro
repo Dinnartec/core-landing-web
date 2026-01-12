@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { getTranslations } from '@/lib/i18n'
+
+const lang = 'es'
+const t = getTranslations(lang)
+---
+
+<BaseLayout
+  title="Dinnartec — Innovando el futuro, mejorando el presente"
+  description={t('hero.description')}
+  lang={lang}
+>
+  <main>
+    <!-- Header -->
+    <!-- Hero Section -->
+    <!-- About Section -->
+    <!-- Solutions Section -->
+    <!-- Factory Section -->
+    <!-- Contact Section -->
+    <!-- Footer -->
+  </main>
+</BaseLayout>

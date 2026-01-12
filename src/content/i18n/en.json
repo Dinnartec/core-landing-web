@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "solutions": "Solutions",
+    "factory": "Factory",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Dinnartec",
+    "tagline": "Innovating the future, improving the present.",
+    "description": "We are a technology company that builds solutions with AI to optimize businesses and create products that scale globally.",
+    "cta": "Schedule a call"
+  },
+  "about": {
+    "title": "What is Dinnartec?",
+    "description": "Dinnartec is a technology company founded by developers with one goal: build solutions that transform industries.",
+    "content": "We are not a traditional agency. We are builders who combine technical execution with strategic thinking. We were born with the mindset of great tech companies, understanding that the path is built step by step.",
+    "pillars": "Our name represents our pillars:",
+    "pillarsList": "Development · Investigation · Innovation · Adaptation · Revolution · Technology"
+  },
+  "solutions": {
+    "title": "Dinnartec Solutions",
+    "subtitle": "We optimize businesses with technology and AI.",
+    "description": "We identify inefficiencies, design strategies, and implement solutions that generate real impact: more revenue, lower costs, greater efficiency.",
+    "tagline": "We don't sell hours. We sell results.",
+    "cta": "Let's talk about your project",
+    "steps": {
+      "diagnosis": {
+        "title": "Diagnosis",
+        "description": "We analyze your business to identify high-impact opportunities"
+      },
+      "sprint": {
+        "title": "Optimization Sprint",
+        "description": "We execute concrete solutions in short cycles (2-4 weeks)"
+      },
+      "support": {
+        "title": "Ongoing Support",
+        "description": "We maintain, adjust, and improve implemented solutions"
+      }
+    }
+  },
+  "factory": {
+    "title": "Dinnartec Factory",
+    "subtitle": "Our proprietary products vertical.",
+    "description": "The best products don't come from ideas — they come from real friction.",
+    "content": "Factory takes the patterns we detect while solving problems and turns them into independent products that scale globally.",
+    "status": "We're currently building. Stay tuned."
+  },
+  "contact": {
+    "title": "Let's build something together",
+    "description": "Have a project in mind? Want to optimize your business? Let's talk.",
+    "cta": "Schedule a call",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send message",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    },
+    "alternative": "Or email us directly at"
+  },
+  "footer": {
+    "copyright": "© 2025 Dinnartec. All rights reserved."
+  }
+}
