@@ -4,9 +4,7 @@ import type { Locale } from '@/types'
 
 const translations = { es, en }
 
-type TranslationKeys = typeof es
-
-function getNestedValue(obj: Record<string, unknown>, path: string): string {
+function getNestedValue(obj: Record<string, unknown>, path: string): unknown {
   const keys = path.split('.')
   let current: unknown = obj
 
@@ -18,15 +16,23 @@ function getNestedValue(obj: Record<string, unknown>, path: string): string {
     }
   }
 
-  return typeof current === 'string' ? current : path
+  return current
 }
 
 export function getTranslations(locale: Locale) {
   const t = translations[locale]
 
-  return function translate(key: string): string {
-    return getNestedValue(t as unknown as Record<string, unknown>, key)
+  function translate(key: string): string {
+    const value = getNestedValue(t as unknown as Record<string, unknown>, key)
+    return typeof value === 'string' ? value : key
   }
+
+  translate.array = function (key: string): string[] {
+    const value = getNestedValue(t as unknown as Record<string, unknown>, key)
+    return Array.isArray(value) ? value : []
+  }
+
+  return translate
 }
 
 export function useTranslations(locale: Locale) {

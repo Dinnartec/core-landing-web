@@ -206,7 +206,7 @@ Or email us directly at dinnartec@gmail.com
 
 | Element | Content |
 |---------|---------|
-| Copyright | © 2025 Dinnartec. All rights reserved. |
+| Copyright | © 2026 Dinnartec. All rights reserved. |
 | Navigation | Solutions · Factory · Contact |
 | Social links | (TBD - LinkedIn, X/Twitter when ready) |
 

@@ -15,7 +15,7 @@
     "description": "Dinnartec es una empresa de tecnología fundada por desarrolladores con un objetivo: construir soluciones que transformen industrias.",
     "content": "No somos una agencia tradicional. Somos builders que combinan ejecución técnica con pensamiento estratégico. Nacimos con la mentalidad de las grandes empresas tecnológicas, entendiendo que el camino se construye paso a paso.",
     "pillars": "Nuestro nombre representa nuestros pilares:",
-    "pillarsList": "Desarrollo · Investigación · Innovación · Adaptación · Revolución · Tecnología"
+    "pillarItems": ["Desarrollo", "Investigación", "Innovación", "Adaptación", "Revolución", "Tecnología"]
   },
   "solutions": {
     "title": "Dinnartec Solutions",
@@ -60,6 +60,6 @@
     "alternative": "O escríbenos directamente a"
   },
   "footer": {
-    "copyright": "© 2025 Dinnartec. Todos los derechos reservados."
+    "copyright": "© 2026 Dinnartec. Todos los derechos reservados."
   }
 }
