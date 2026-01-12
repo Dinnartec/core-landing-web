@@ -6,6 +6,9 @@ import type { Locale } from '@/types'
 interface FooterProps {
   lang: Locale
   translations: {
+    tagline: string
+    navigation: string
+    connect: string
     copyright: string
   }
   navTranslations: {
@@ -39,7 +42,7 @@ export function Footer({ lang, translations, navTranslations }: FooterProps) {
               Dinnartec
             </a>
             <p className="mt-4 max-w-xs font-body text-sm leading-relaxed text-muted">
-              Innovating the future, improving the present.
+              {translations.tagline}
             </p>
 
             <div className="mt-6 flex gap-4">
@@ -60,7 +63,7 @@ export function Footer({ lang, translations, navTranslations }: FooterProps) {
 
           <nav className="flex flex-col gap-3">
             <span className="mb-2 font-body text-xs font-medium uppercase tracking-widest text-muted">
-              Navigation
+              {translations.navigation}
             </span>
             {navLinks.map((link) => (
               <a
@@ -75,7 +78,7 @@ export function Footer({ lang, translations, navTranslations }: FooterProps) {
 
           <div className="flex flex-col gap-3">
             <span className="mb-2 font-body text-xs font-medium uppercase tracking-widest text-muted">
-              Connect
+              {translations.connect}
             </span>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
