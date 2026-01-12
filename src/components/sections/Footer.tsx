@@ -1,4 +1,6 @@
+import { FaInstagram, FaXTwitter } from 'react-icons/fa6'
 import { Container } from '@/components/layout/Container'
+import { SOCIAL_LINKS, CONTACT_EMAIL } from '@/lib/constants'
 import type { Locale } from '@/types'
 
 interface FooterProps {
@@ -19,6 +21,11 @@ const navLinks = [
   { key: 'contact', href: '#contact' },
 ] as const
 
+const socialLinks = [
+  { name: 'Instagram', href: SOCIAL_LINKS.instagram, icon: FaInstagram },
+  { name: 'X', href: SOCIAL_LINKS.x, icon: FaXTwitter },
+] as const
+
 export function Footer({ lang, translations, navTranslations }: FooterProps) {
   return (
     <footer className="border-t border-border bg-white py-12 md:py-16">
@@ -34,6 +41,21 @@ export function Footer({ lang, translations, navTranslations }: FooterProps) {
             <p className="mt-4 max-w-xs font-body text-sm leading-relaxed text-muted">
               Innovating the future, improving the present.
             </p>
+
+            <div className="mt-6 flex gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center border border-border text-foreground transition-all hover:border-foreground hover:bg-foreground hover:text-white"
+                  aria-label={social.name}
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
           </div>
 
           <nav className="flex flex-col gap-3">
@@ -56,10 +78,10 @@ export function Footer({ lang, translations, navTranslations }: FooterProps) {
               Connect
             </span>
             <a
-              href="mailto:dinnartec@gmail.com"
+              href={`mailto:${CONTACT_EMAIL}`}
               className="font-body text-sm text-foreground transition-colors hover:text-muted"
             >
-              dinnartec@gmail.com
+              {CONTACT_EMAIL}
             </a>
           </div>
         </div>
