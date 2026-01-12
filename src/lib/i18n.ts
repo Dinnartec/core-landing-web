@@ -27,7 +27,7 @@ export function getTranslations(locale: Locale) {
     return typeof value === 'string' ? value : key
   }
 
-  translate.array = function (key: string): string[] {
+  translate.array = function <T = string>(key: string): T[] {
     const value = getNestedValue(t as unknown as Record<string, unknown>, key)
     return Array.isArray(value) ? value : []
   }

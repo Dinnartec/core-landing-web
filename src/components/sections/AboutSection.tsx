@@ -1,5 +1,18 @@
+import {
+  HiOutlineCode,
+  HiOutlineSearch,
+  HiOutlineLightBulb,
+  HiOutlineRefresh,
+  HiOutlineLightningBolt,
+  HiOutlineChip,
+} from 'react-icons/hi'
 import { Container } from '@/components/layout/Container'
 import type { Locale } from '@/types'
+
+interface PillarItem {
+  name: string
+  description: string
+}
 
 interface AboutSectionProps {
   lang: Locale
@@ -8,9 +21,18 @@ interface AboutSectionProps {
     description: string
     content: string
     pillars: string
-    pillarItems: string[]
+    pillarItems: PillarItem[]
   }
 }
+
+const pillarIcons = [
+  HiOutlineCode,
+  HiOutlineSearch,
+  HiOutlineLightBulb,
+  HiOutlineRefresh,
+  HiOutlineLightningBolt,
+  HiOutlineChip,
+]
 
 export function AboutSection({ translations }: AboutSectionProps) {
   return (
@@ -43,19 +65,30 @@ export function AboutSection({ translations }: AboutSectionProps) {
             {translations.pillars}
           </p>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-            {translations.pillarItems.map((pillar, index) => (
-              <div
-                key={index}
-                className="group relative flex items-center justify-center border border-border bg-white px-6 py-8 transition-all duration-300 hover:border-foreground hover:shadow-lg"
-              >
-                <span className="font-display text-base font-bold uppercase tracking-wide transition-transform duration-300 group-hover:scale-105 md:text-lg">
-                  {pillar}
-                </span>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {translations.pillarItems.map((pillar, index) => {
+              const Icon = pillarIcons[index]
+              return (
+                <div
+                  key={index}
+                  className="group relative border border-border bg-white p-6 transition-all duration-300 hover:border-foreground hover:shadow-lg md:p-8"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center border border-border transition-colors duration-300 group-hover:border-foreground group-hover:bg-foreground">
+                    <Icon className="h-6 w-6 text-foreground transition-colors duration-300 group-hover:text-white" />
+                  </div>
 
-                <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-5" />
-              </div>
-            ))}
+                  <h3 className="font-display text-lg font-bold uppercase tracking-wide md:text-xl">
+                    {pillar.name}
+                  </h3>
+
+                  <p className="mt-2 font-body text-sm leading-relaxed text-muted md:text-base">
+                    {pillar.description}
+                  </p>
+
+                  <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-[0.02]" />
+                </div>
+              )
+            })}
           </div>
         </div>
       </Container>
