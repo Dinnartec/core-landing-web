@@ -1,0 +1,125 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { Header } from '@/components/layout'
+import {
+  HeroSection,
+  AboutSection,
+  SolutionsSection,
+  FactorySection,
+  ContactSection,
+  Footer,
+} from '@/components/sections'
+import { getTranslations } from '@/lib/i18n'
+
+const lang = 'en'
+const t = getTranslations(lang)
+---
+
+<BaseLayout
+  title="Dinnartec — Innovating the future, improving the present"
+  description={t('hero.description')}
+  lang={lang}
+>
+  <Header
+    client:load
+    lang={lang}
+    translations={{
+      solutions: t('nav.solutions'),
+      factory: t('nav.factory'),
+      contact: t('nav.contact'),
+    }}
+  />
+
+  <main>
+    <HeroSection
+      client:load
+      lang={lang}
+      translations={{
+        title: t('hero.title'),
+        tagline: t('hero.tagline'),
+        description: t('hero.description'),
+        cta: t('hero.cta'),
+        learnMore: t('hero.learnMore'),
+        badge: t('hero.badge'),
+      }}
+    />
+
+    <AboutSection
+      lang={lang}
+      translations={{
+        title: t('about.title'),
+        description: t('about.description'),
+        content: t('about.content'),
+        pillars: t('about.pillars'),
+        pillarItems: t.array('about.pillarItems'),
+      }}
+    />
+
+    <SolutionsSection
+      lang={lang}
+      translations={{
+        title: t('solutions.title'),
+        subtitle: t('solutions.subtitle'),
+        description: t('solutions.description'),
+        tagline: t('solutions.tagline'),
+        cta: t('solutions.cta'),
+        steps: {
+          diagnosis: {
+            title: t('solutions.steps.diagnosis.title'),
+            description: t('solutions.steps.diagnosis.description'),
+          },
+          sprint: {
+            title: t('solutions.steps.sprint.title'),
+            description: t('solutions.steps.sprint.description'),
+          },
+          support: {
+            title: t('solutions.steps.support.title'),
+            description: t('solutions.steps.support.description'),
+          },
+        },
+      }}
+    />
+
+    <FactorySection
+      lang={lang}
+      translations={{
+        title: t('factory.title'),
+        subtitle: t('factory.subtitle'),
+        description: t('factory.description'),
+        content: t('factory.content'),
+        status: t('factory.status'),
+      }}
+    />
+
+    <ContactSection
+      client:load
+      lang={lang}
+      translations={{
+        title: t('contact.title'),
+        description: t('contact.description'),
+        cta: t('contact.cta'),
+        form: {
+          name: t('contact.form.name'),
+          email: t('contact.form.email'),
+          message: t('contact.form.message'),
+          submit: t('contact.form.submit'),
+          success: t('contact.form.success'),
+          error: t('contact.form.error'),
+        },
+        alternative: t('contact.alternative'),
+      }}
+    />
+  </main>
+
+  <Footer
+    lang={lang}
+    translations={{
+      copyright: t('footer.copyright'),
+    }}
+    navTranslations={{
+      solutions: t('nav.solutions'),
+      factory: t('nav.factory'),
+      contact: t('nav.contact'),
+    }}
+  />
+</BaseLayout>
