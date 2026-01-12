@@ -35,7 +35,16 @@ export function ContactSection({ translations }: ContactSectionProps) {
     setFormState({ status: 'loading' })
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send')
+      }
+
       setFormState({ status: 'success' })
       setFormData({ name: '', email: '', message: '' })
     } catch {
