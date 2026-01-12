@@ -1,19 +1,19 @@
-# Pendientes — Dinnartec Landing
+# Pending — Dinnartec Landing
 
-## Opcionales
+## Optional
 
-- [ ] **Logo visual** — Reemplazar texto "Dinnartec" por imagen cuando esté listo
-- [ ] **Imagen OG** — Reemplazar `public/og-image.svg` con imagen real (1200x630px)
-- [ ] **Verificar dominio en Resend** — Para enviar desde `@dinnartec.com` en vez de `@resend.dev`
-- [ ] **Analytics** — Activar Vercel Analytics (gratis)
+- [ ] **Visual logo** — Replace "Dinnartec" text with image when ready
+- [ ] **OG image** — Replace `public/og-image.svg` with real image (1200x630px)
+- [ ] **Verify domain in Resend** — To send from `@dinnartec.com` instead of `@resend.dev`
+- [ ] **Analytics** — Enable Vercel Analytics (free)
 
-## Ideas futuras
+## Future Ideas
 
-- [ ] Agregar sección de casos de éxito / testimonios
-- [ ] Blog o sección de contenido
-- [ ] Página de servicios detallada
-- [ ] Integración con CRM
+- [ ] Add success stories / testimonials section
+- [ ] Blog or content section
+- [ ] Detailed services page
+- [ ] CRM integration
 
 ---
 
-*Última actualización: Enero 2026*
+*Last updated: January 2026*
