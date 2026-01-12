@@ -9,6 +9,8 @@ interface HeroSectionProps {
     tagline: string
     description: string
     cta: string
+    learnMore: string
+    badge: string
   }
 }
 
@@ -26,7 +28,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
             <div className="mb-6 inline-flex animate-fade-up">
               <span className="inline-flex items-center gap-2 border border-border bg-white px-4 py-2 font-body text-xs font-medium uppercase tracking-widest text-muted">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-black" />
-                Technology Company
+                {translations.badge}
               </span>
             </div>
 
@@ -51,7 +53,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
                 href="#solutions"
                 className="inline-flex items-center justify-center px-8 py-4 font-body text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:text-muted"
               >
-                Learn more
+                {translations.learnMore}
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { HiArrowRight, HiOutlineMail } from 'react-icons/hi'
 import { Container } from '@/components/layout/Container'
-import { CONTACT_EMAIL } from '@/lib/constants'
+import { CONTACT_EMAIL, CALENDLY_URL } from '@/lib/constants'
 import type { Locale, FormState } from '@/types'
 
 interface ContactSectionProps {
@@ -76,7 +76,9 @@ export function ContactSection({ translations }: ContactSectionProps) {
 
             <div className="mt-12 space-y-6">
               <a
-                href="#"
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 border border-white bg-white px-8 py-4 font-body text-sm font-medium uppercase tracking-widest text-black transition-all hover:bg-transparent hover:text-white"
               >
                 {translations.cta}
