@@ -6,6 +6,7 @@ import {
   AboutSection,
   SolutionsSection,
   FactorySection,
+  LabsSection,
   ContactSection,
   Footer,
 } from '@/components/sections'
@@ -26,6 +27,7 @@ const t = getTranslations(lang)
     translations={{
       solutions: t('nav.solutions'),
       factory: t('nav.factory'),
+      labs: t('nav.labs'),
       contact: t('nav.contact'),
     }}
   />
@@ -97,6 +99,34 @@ const t = getTranslations(lang)
       }}
     />
 
+    <LabsSection
+      lang={lang}
+      translations={{
+        label: t('labs.label'),
+        titlePrefix: t('labs.titlePrefix'),
+        titleHighlight: t('labs.titleHighlight'),
+        subtitle: t('labs.subtitle'),
+        description: t('labs.description'),
+        content: t('labs.content'),
+        status: t('labs.status'),
+        badge: t('labs.badge'),
+        areas: {
+          experimental: {
+            title: t('labs.areas.experimental.title'),
+            description: t('labs.areas.experimental.description'),
+          },
+          emerging: {
+            title: t('labs.areas.emerging.title'),
+            description: t('labs.areas.emerging.description'),
+          },
+          capabilities: {
+            title: t('labs.areas.capabilities.title'),
+            description: t('labs.areas.capabilities.description'),
+          },
+        },
+      }}
+    />
+
     <ContactSection
       client:load
       lang={lang}
@@ -129,6 +159,7 @@ const t = getTranslations(lang)
     navTranslations={{
       solutions: t('nav.solutions'),
       factory: t('nav.factory'),
+      labs: t('nav.labs'),
       contact: t('nav.contact'),
     }}
   />
