@@ -2,6 +2,7 @@
   "nav": {
     "solutions": "Servicios",
     "factory": "Productos",
+    "labs": "Investigación",
     "contact": "Contacto"
   },
   "hero": {
@@ -60,8 +61,32 @@
     "status": "Estamos construyendo. Pronto verás más.",
     "badge": "En Desarrollo"
   },
+  "labs": {
+    "label": "04 — Investigación",
+    "titlePrefix": "Dinnartec",
+    "titleHighlight": "Labs",
+    "subtitle": "Nuestra vertical de investigación y desarrollo.",
+    "description": "Exploramos el futuro de la tecnología para construir el presente de mañana.",
+    "content": "Labs es donde experimentamos con tecnologías emergentes, desarrollamos capacidades internas y preparamos las innovaciones que definirán nuestros próximos productos y servicios.",
+    "status": "Próximamente",
+    "badge": "Planificado",
+    "areas": {
+      "experimental": {
+        "title": "Proyectos Experimentales",
+        "description": "Prototipos y pruebas de concepto que exploran nuevas posibilidades tecnológicas"
+      },
+      "emerging": {
+        "title": "Tecnologías Emergentes",
+        "description": "Investigación en IA avanzada, blockchain, computación cuántica y más"
+      },
+      "capabilities": {
+        "title": "Capacidades Internas",
+        "description": "Desarrollo de herramientas y metodologías que potencian nuestro trabajo"
+      }
+    }
+  },
   "contact": {
-    "label": "04 — Contacto",
+    "label": "05 — Contacto",
     "title": "Construyamos algo juntos",
     "description": "¿Tienes un proyecto en mente? ¿Quieres optimizar tu negocio? Hablemos.",
     "cta": "Agenda una llamada",
