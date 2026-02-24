@@ -1,5 +1,16 @@
 # Pending — Dinnartec Landing
 
+## Recently Completed
+
+- [x] **Labs section** — Added R&D vertical section with gray background
+- [x] **Pricing section** — Plans & Pricing with Diagnosis, Sprint, Retainer tiers
+- [x] **TikTok social link** — Added to footer
+- [x] **GitHub Action** — Auto-remove `dev/` folder from main branch
+
+## Decisions Pending
+
+- [ ] **Pricing location** — Should Pricing be a sub-section of Solutions instead of separate?
+
 ## Optional
 
 - [ ] **Visual logo** — Replace "Dinnartec" text with image when ready
@@ -11,9 +22,10 @@
 
 - [ ] Add success stories / testimonials section
 - [ ] Blog or content section
-- [ ] Detailed services page
+- [ ] Detailed services page (separate from landing)
 - [ ] CRM integration
+- [ ] FAQ section (based on pricing document)
 
 ---
 
-*Last updated: January 2026*
+*Last updated: February 2026*
