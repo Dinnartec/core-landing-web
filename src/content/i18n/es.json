@@ -1,6 +1,7 @@
 {
   "nav": {
     "solutions": "Servicios",
+    "pricing": "Precios",
     "factory": "Productos",
     "labs": "Investigación",
     "contact": "Contacto"
@@ -51,8 +52,140 @@
       }
     }
   },
+  "pricing": {
+    "label": "03 — Precios",
+    "title": "Planes & Precios",
+    "subtitle": "Elige el plan que mejor se adapte a tu negocio",
+    "diagnosis": {
+      "name": "Diagnóstico",
+      "price": "$500",
+      "duration": "5-7 días",
+      "description": "Entendemos tu negocio, identificamos oportunidades y creamos un plan de acción.",
+      "features": [
+        "Discovery call (1-2 horas)",
+        "Análisis de procesos actuales",
+        "Identificación de quick wins",
+        "Roadmap priorizado",
+        "Plan de acción con estimaciones"
+      ],
+      "cta": "Empezar"
+    },
+    "sprint": {
+      "name": "Sprint",
+      "description": "Ejecutamos soluciones concretas en ciclos cortos y enfocados.",
+      "cta": "Empezar Sprint",
+      "tiers": {
+        "s": {
+          "name": "S",
+          "price": "$1,500",
+          "duration": "2 semanas",
+          "description": "Ideal para una automatización o integración",
+          "features": [
+            "Scope definido",
+            "Diseño + implementación",
+            "Testing y deploy",
+            "Documentación",
+            "2 semanas de bug fixes"
+          ]
+        },
+        "m": {
+          "name": "M",
+          "price": "$3,000",
+          "duration": "3-4 semanas",
+          "description": "Múltiples automatizaciones o implementación de IA",
+          "features": [
+            "Todo lo del Sprint S",
+            "2-3 automatizaciones conectadas",
+            "Implementación de IA con lógica custom",
+            "Dashboard o herramienta de reportes",
+            "Integración multi-sistema"
+          ]
+        },
+        "l": {
+          "name": "L",
+          "price": "$5,000",
+          "duration": "4-6 semanas",
+          "description": "Integraciones complejas o desarrollo custom",
+          "features": [
+            "Todo lo del Sprint M",
+            "Automatización end-to-end",
+            "Aplicación web custom (MVP)",
+            "Pipeline de IA complejo",
+            "Integración de 3+ herramientas"
+          ]
+        }
+      }
+    },
+    "retainer": {
+      "name": "Retainer",
+      "description": "Mantenemos, mejoramos y expandimos las soluciones implementadas.",
+      "cta": "Suscribirse",
+      "tiers": {
+        "essential": {
+          "name": "Esencial",
+          "price": "$500/mes",
+          "hours": "~5 horas",
+          "description": "Mantenimiento y ajustes menores",
+          "features": [
+            "Monitoreo de soluciones",
+            "Bug fixes y ajustes",
+            "Soporte prioritario",
+            "Sync call mensual"
+          ]
+        },
+        "growth": {
+          "name": "Growth",
+          "price": "$1,000/mes",
+          "hours": "~12 horas",
+          "description": "Mejoras activas y nuevas features",
+          "features": [
+            "Todo lo del Esencial",
+            "Mejoras e iteraciones",
+            "Nuevas features pequeñas",
+            "Comunicación Slack/WhatsApp"
+          ]
+        },
+        "scale": {
+          "name": "Scale",
+          "price": "$2,000/mes",
+          "hours": "~25 horas",
+          "description": "Desarrollo continuo y soporte prioritario",
+          "features": [
+            "Todo lo del Growth",
+            "Desarrollo continuo",
+            "Soporte prioritario 24/7",
+            "Estrategia técnica mensual"
+          ]
+        }
+      }
+    },
+    "packages": {
+      "title": "Paquetes",
+      "subtitle": "Combina servicios y ahorra",
+      "items": {
+        "starter": {
+          "name": "Starter",
+          "includes": "Diagnóstico + Sprint S",
+          "price": "$1,800",
+          "savings": "Ahorra $200"
+        },
+        "growth": {
+          "name": "Growth",
+          "includes": "Diagnóstico + Sprint M + 3 meses Esencial",
+          "price": "$4,700",
+          "savings": "Ahorra $300"
+        },
+        "scale": {
+          "name": "Scale",
+          "includes": "Diagnóstico + Sprint L + 3 meses Growth",
+          "price": "$7,700",
+          "savings": "Ahorra $800"
+        }
+      }
+    }
+  },
   "factory": {
-    "label": "03 — Productos",
+    "label": "04 — Productos",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
     "subtitle": "Nuestra vertical de productos propios.",
@@ -62,7 +195,7 @@
     "badge": "En Desarrollo"
   },
   "labs": {
-    "label": "04 — Investigación",
+    "label": "05 — Investigación",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Labs",
     "subtitle": "Nuestra vertical de investigación y desarrollo.",
@@ -86,7 +219,7 @@
     }
   },
   "contact": {
-    "label": "05 — Contacto",
+    "label": "06 — Contacto",
     "title": "Construyamos algo juntos",
     "description": "¿Tienes un proyecto en mente? ¿Quieres optimizar tu negocio? Hablemos.",
     "cta": "Agenda una llamada",

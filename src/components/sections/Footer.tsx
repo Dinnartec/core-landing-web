@@ -13,6 +13,7 @@ interface FooterProps {
   }
   navTranslations: {
     solutions: string
+    pricing: string
     factory: string
     labs: string
     contact: string
@@ -21,6 +22,7 @@ interface FooterProps {
 
 const navLinks = [
   { key: 'solutions', href: '#solutions' },
+  { key: 'pricing', href: '#pricing' },
   { key: 'factory', href: '#factory' },
   { key: 'labs', href: '#labs' },
   { key: 'contact', href: '#contact' },
