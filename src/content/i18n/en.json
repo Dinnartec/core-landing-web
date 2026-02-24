@@ -1,6 +1,7 @@
 {
   "nav": {
     "solutions": "Services",
+    "pricing": "Pricing",
     "factory": "Products",
     "labs": "Research",
     "contact": "Contact"
@@ -51,8 +52,140 @@
       }
     }
   },
+  "pricing": {
+    "label": "03 — Pricing",
+    "title": "Plans & Pricing",
+    "subtitle": "Choose the plan that best fits your business",
+    "diagnosis": {
+      "name": "Diagnosis",
+      "price": "$500",
+      "duration": "5-7 days",
+      "description": "We understand your business, identify opportunities, and create an action plan.",
+      "features": [
+        "Discovery call (1-2 hours)",
+        "Current processes analysis",
+        "Quick wins identification",
+        "Prioritized roadmap",
+        "Action plan with estimates"
+      ],
+      "cta": "Get Started"
+    },
+    "sprint": {
+      "name": "Sprint",
+      "description": "We execute concrete solutions in short, focused cycles.",
+      "cta": "Start Sprint",
+      "tiers": {
+        "s": {
+          "name": "S",
+          "price": "$1,500",
+          "duration": "2 weeks",
+          "description": "Ideal for a single automation or integration",
+          "features": [
+            "Defined scope",
+            "Design + implementation",
+            "Testing and deployment",
+            "Documentation",
+            "2 weeks of bug fixes"
+          ]
+        },
+        "m": {
+          "name": "M",
+          "price": "$3,000",
+          "duration": "3-4 weeks",
+          "description": "Multiple automations or AI implementation",
+          "features": [
+            "Everything in Sprint S",
+            "2-3 connected automations",
+            "AI implementation with custom logic",
+            "Dashboard or reporting tool",
+            "Multi-system integration"
+          ]
+        },
+        "l": {
+          "name": "L",
+          "price": "$5,000",
+          "duration": "4-6 weeks",
+          "description": "Complex integrations or custom development",
+          "features": [
+            "Everything in Sprint M",
+            "End-to-end automation",
+            "Custom web application (MVP)",
+            "Complex AI pipeline",
+            "Integration of 3+ tools"
+          ]
+        }
+      }
+    },
+    "retainer": {
+      "name": "Retainer",
+      "description": "We maintain, improve, and expand implemented solutions.",
+      "cta": "Subscribe",
+      "tiers": {
+        "essential": {
+          "name": "Essential",
+          "price": "$500/mo",
+          "hours": "~5 hours",
+          "description": "Maintenance and minor adjustments",
+          "features": [
+            "Solution monitoring",
+            "Bug fixes and adjustments",
+            "Priority support",
+            "Monthly sync call"
+          ]
+        },
+        "growth": {
+          "name": "Growth",
+          "price": "$1,000/mo",
+          "hours": "~12 hours",
+          "description": "Active improvements and new features",
+          "features": [
+            "Everything in Essential",
+            "Improvements and iterations",
+            "New small features",
+            "Slack/WhatsApp communication"
+          ]
+        },
+        "scale": {
+          "name": "Scale",
+          "price": "$2,000/mo",
+          "hours": "~25 hours",
+          "description": "Continuous development and priority support",
+          "features": [
+            "Everything in Growth",
+            "Continuous development",
+            "24/7 priority support",
+            "Monthly technical strategy"
+          ]
+        }
+      }
+    },
+    "packages": {
+      "title": "Packages",
+      "subtitle": "Bundle services and save",
+      "items": {
+        "starter": {
+          "name": "Starter",
+          "includes": "Diagnosis + Sprint S",
+          "price": "$1,800",
+          "savings": "Save $200"
+        },
+        "growth": {
+          "name": "Growth",
+          "includes": "Diagnosis + Sprint M + 3 months Essential",
+          "price": "$4,700",
+          "savings": "Save $300"
+        },
+        "scale": {
+          "name": "Scale",
+          "includes": "Diagnosis + Sprint L + 3 months Growth",
+          "price": "$7,700",
+          "savings": "Save $800"
+        }
+      }
+    }
+  },
   "factory": {
-    "label": "03 — Products",
+    "label": "04 — Products",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
     "subtitle": "Our proprietary products vertical.",
@@ -62,7 +195,7 @@
     "badge": "In Development"
   },
   "labs": {
-    "label": "04 — Research",
+    "label": "05 — Research",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Labs",
     "subtitle": "Our research and development vertical.",
@@ -86,7 +219,7 @@
     }
   },
   "contact": {
-    "label": "05 — Contact",
+    "label": "06 — Contact",
     "title": "Let's build something together",
     "description": "Have a project in mind? Want to optimize your business? Let's talk.",
     "cta": "Schedule a call",

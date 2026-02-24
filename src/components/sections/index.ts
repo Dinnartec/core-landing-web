@@ -1,6 +1,7 @@
 export { HeroSection } from './HeroSection'
 export { AboutSection } from './AboutSection'
 export { SolutionsSection } from './SolutionsSection'
+export { PricingSection } from './PricingSection'
 export { FactorySection } from './FactorySection'
 export { LabsSection } from './LabsSection'
 export { ContactSection } from './ContactSection'

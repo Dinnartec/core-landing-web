@@ -1,4 +1,4 @@
-import { FaInstagram, FaXTwitter } from 'react-icons/fa6'
+import { FaInstagram, FaXTwitter, FaTiktok } from 'react-icons/fa6'
 import { Container } from '@/components/layout/Container'
 import { SOCIAL_LINKS, CONTACT_EMAIL } from '@/lib/constants'
 import type { Locale } from '@/types'
@@ -13,6 +13,7 @@ interface FooterProps {
   }
   navTranslations: {
     solutions: string
+    pricing: string
     factory: string
     labs: string
     contact: string
@@ -21,6 +22,7 @@ interface FooterProps {
 
 const navLinks = [
   { key: 'solutions', href: '#solutions' },
+  { key: 'pricing', href: '#pricing' },
   { key: 'factory', href: '#factory' },
   { key: 'labs', href: '#labs' },
   { key: 'contact', href: '#contact' },
@@ -29,6 +31,7 @@ const navLinks = [
 const socialLinks = [
   { name: 'Instagram', href: SOCIAL_LINKS.instagram, icon: FaInstagram },
   { name: 'X', href: SOCIAL_LINKS.x, icon: FaXTwitter },
+  { name: 'TikTok', href: SOCIAL_LINKS.tiktok, icon: FaTiktok },
 ] as const
 
 export function Footer({ lang, translations, navTranslations }: FooterProps) {

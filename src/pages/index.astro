@@ -5,6 +5,7 @@ import {
   HeroSection,
   AboutSection,
   SolutionsSection,
+  PricingSection,
   FactorySection,
   LabsSection,
   ContactSection,
@@ -26,6 +27,7 @@ const t = getTranslations(lang)
     lang={lang}
     translations={{
       solutions: t('nav.solutions'),
+      pricing: t('nav.pricing'),
       factory: t('nav.factory'),
       labs: t('nav.labs'),
       contact: t('nav.contact'),
@@ -80,6 +82,104 @@ const t = getTranslations(lang)
           support: {
             title: t('solutions.steps.support.title'),
             description: t('solutions.steps.support.description'),
+          },
+        },
+      }}
+    />
+
+    <PricingSection
+      client:load
+      lang={lang}
+      translations={{
+        label: t('pricing.label'),
+        title: t('pricing.title'),
+        subtitle: t('pricing.subtitle'),
+        diagnosis: {
+          name: t('pricing.diagnosis.name'),
+          price: t('pricing.diagnosis.price'),
+          duration: t('pricing.diagnosis.duration'),
+          description: t('pricing.diagnosis.description'),
+          features: t.array('pricing.diagnosis.features'),
+          cta: t('pricing.diagnosis.cta'),
+        },
+        sprint: {
+          name: t('pricing.sprint.name'),
+          description: t('pricing.sprint.description'),
+          cta: t('pricing.sprint.cta'),
+          tiers: {
+            s: {
+              name: t('pricing.sprint.tiers.s.name'),
+              price: t('pricing.sprint.tiers.s.price'),
+              duration: t('pricing.sprint.tiers.s.duration'),
+              description: t('pricing.sprint.tiers.s.description'),
+              features: t.array('pricing.sprint.tiers.s.features'),
+            },
+            m: {
+              name: t('pricing.sprint.tiers.m.name'),
+              price: t('pricing.sprint.tiers.m.price'),
+              duration: t('pricing.sprint.tiers.m.duration'),
+              description: t('pricing.sprint.tiers.m.description'),
+              features: t.array('pricing.sprint.tiers.m.features'),
+            },
+            l: {
+              name: t('pricing.sprint.tiers.l.name'),
+              price: t('pricing.sprint.tiers.l.price'),
+              duration: t('pricing.sprint.tiers.l.duration'),
+              description: t('pricing.sprint.tiers.l.description'),
+              features: t.array('pricing.sprint.tiers.l.features'),
+            },
+          },
+        },
+        retainer: {
+          name: t('pricing.retainer.name'),
+          description: t('pricing.retainer.description'),
+          cta: t('pricing.retainer.cta'),
+          tiers: {
+            essential: {
+              name: t('pricing.retainer.tiers.essential.name'),
+              price: t('pricing.retainer.tiers.essential.price'),
+              hours: t('pricing.retainer.tiers.essential.hours'),
+              description: t('pricing.retainer.tiers.essential.description'),
+              features: t.array('pricing.retainer.tiers.essential.features'),
+            },
+            growth: {
+              name: t('pricing.retainer.tiers.growth.name'),
+              price: t('pricing.retainer.tiers.growth.price'),
+              hours: t('pricing.retainer.tiers.growth.hours'),
+              description: t('pricing.retainer.tiers.growth.description'),
+              features: t.array('pricing.retainer.tiers.growth.features'),
+            },
+            scale: {
+              name: t('pricing.retainer.tiers.scale.name'),
+              price: t('pricing.retainer.tiers.scale.price'),
+              hours: t('pricing.retainer.tiers.scale.hours'),
+              description: t('pricing.retainer.tiers.scale.description'),
+              features: t.array('pricing.retainer.tiers.scale.features'),
+            },
+          },
+        },
+        packages: {
+          title: t('pricing.packages.title'),
+          subtitle: t('pricing.packages.subtitle'),
+          items: {
+            starter: {
+              name: t('pricing.packages.items.starter.name'),
+              includes: t('pricing.packages.items.starter.includes'),
+              price: t('pricing.packages.items.starter.price'),
+              savings: t('pricing.packages.items.starter.savings'),
+            },
+            growth: {
+              name: t('pricing.packages.items.growth.name'),
+              includes: t('pricing.packages.items.growth.includes'),
+              price: t('pricing.packages.items.growth.price'),
+              savings: t('pricing.packages.items.growth.savings'),
+            },
+            scale: {
+              name: t('pricing.packages.items.scale.name'),
+              includes: t('pricing.packages.items.scale.includes'),
+              price: t('pricing.packages.items.scale.price'),
+              savings: t('pricing.packages.items.scale.savings'),
+            },
           },
         },
       }}
@@ -158,6 +258,7 @@ const t = getTranslations(lang)
     }}
     navTranslations={{
       solutions: t('nav.solutions'),
+      pricing: t('nav.pricing'),
       factory: t('nav.factory'),
       labs: t('nav.labs'),
       contact: t('nav.contact'),
