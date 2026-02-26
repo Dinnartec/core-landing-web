@@ -176,14 +176,14 @@
         "growth": {
           "name": "Growth",
           "includes": "Bronze + Silver M + 3 months Gold S",
-          "price": "$4,700",
-          "savings": "Save $300"
+          "price": "$4,500",
+          "savings": "Save $500"
         },
         "scale": {
           "name": "Scale",
           "includes": "Bronze + Silver L + 3 months Gold M",
-          "price": "$7,700",
-          "savings": "Save $800"
+          "price": "$7,500",
+          "savings": "Save $1,000"
         }
       }
     }
