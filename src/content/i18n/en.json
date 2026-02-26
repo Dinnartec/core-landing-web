@@ -8,11 +8,11 @@
   },
   "hero": {
     "title": "Dinnartec",
-    "tagline": "Innovating the future, improving the present.",
-    "description": "We are a technology company that builds solutions with AI to optimize businesses and create products that scale globally.",
+    "tagline": "Smart technology for real problems",
+    "description": "AI-based solutions that save you time and money.",
     "cta": "Schedule a call",
     "learnMore": "Learn more",
-    "badge": "Technology Company"
+    "badge": "AI · Automation · Development"
   },
   "experience": {
     "text": "Backed by experience at"
@@ -21,24 +21,24 @@
     "label": "01 — About",
     "title": "What is Dinnartec?",
     "description": "Dinnartec is a technology company founded by developers with one goal: build solutions that transform industries.",
-    "content": "We are not a traditional agency. We are builders who combine technical execution with strategic thinking. We were born with the mindset of great tech companies, understanding that the path is built step by step.",
-    "pillars": "Our name represents our pillars:",
+    "content": "We combine strategy with execution. We don't just plan, we build. And we do it step by step.",
+    "pillars": "Our pillars:",
     "pillarItems": [
-      { "name": "Development", "description": "We build software with technical excellence" },
-      { "name": "Investigation", "description": "We explore new technologies and methodologies" },
+      { "name": "Development", "description": "We build software that works" },
+      { "name": "Research", "description": "We explore new ways to solve problems" },
       { "name": "Innovation", "description": "We create original solutions to real problems" },
       { "name": "Adaptation", "description": "We evolve with the market and its needs" },
-      { "name": "Revolution", "description": "We transform industries, not just participate" },
-      { "name": "Technology", "description": "Our core, our tool, our medium" }
+      { "name": "Revolution", "description": "We transform industries, not just participate in them" },
+      { "name": "Technology", "description": "The engine behind everything we do" }
     ]
   },
   "solutions": {
     "label": "02 — Services",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
-    "subtitle": "We optimize businesses with technology and AI.",
-    "description": "We identify inefficiencies, design strategies, and implement solutions that generate real impact: more revenue, lower costs, greater efficiency.",
-    "tagline": "We don't sell hours. We sell results.",
+    "subtitle": "AI applied to your business.",
+    "description": "We detect what's slowing your business down and fix it. More revenue, lower costs, greater efficiency.",
+    "tagline": "From problem to solution. No detours.",
     "cta": "Let's talk about your project",
     "steps": {
       "diagnosis": {
@@ -46,11 +46,11 @@
         "description": "We analyze your business to identify high-impact opportunities"
       },
       "sprint": {
-        "title": "Optimization Sprint",
-        "description": "We execute concrete solutions in short cycles (2-4 weeks)"
+        "title": "Implementation",
+        "description": "We execute concrete solutions in 2-4 weeks"
       },
       "support": {
-        "title": "Ongoing Support",
+        "title": "Support",
         "description": "We maintain, adjust, and improve implemented solutions"
       }
     }
@@ -60,23 +60,23 @@
     "title": "Plans & Pricing",
     "subtitle": "Choose the plan that best fits your business",
     "diagnosis": {
-      "name": "Diagnosis",
+      "name": "Bronze",
       "price": "$500",
       "duration": "5-7 days",
       "description": "We understand your business, identify opportunities, and create an action plan.",
       "features": [
-        "Discovery call (1-2 hours)",
+        "Initial call (1-2 hours)",
         "Current processes analysis",
-        "Quick wins identification",
+        "Quick improvements identification",
         "Prioritized roadmap",
         "Action plan with estimates"
       ],
       "cta": "Get Started"
     },
     "sprint": {
-      "name": "Sprint",
-      "description": "We execute concrete solutions in short, focused cycles.",
-      "cta": "Start Sprint",
+      "name": "Silver",
+      "description": "We execute concrete solutions in a few weeks.",
+      "cta": "Get Started",
       "tiers": {
         "s": {
           "name": "S",
@@ -86,9 +86,9 @@
           "features": [
             "Defined scope",
             "Design + implementation",
-            "Testing and deployment",
+            "Testing and launch",
             "Documentation",
-            "2 weeks of bug fixes"
+            "2 weeks of fixes"
           ]
         },
         "m": {
@@ -97,9 +97,9 @@
           "duration": "3-4 weeks",
           "description": "Multiple automations or AI implementation",
           "features": [
-            "Everything in Sprint S",
+            "Everything in Silver S",
             "2-3 connected automations",
-            "AI implementation with custom logic",
+            "Custom AI implementation",
             "Dashboard or reporting tool",
             "Multi-system integration"
           ]
@@ -110,77 +110,78 @@
           "duration": "4-6 weeks",
           "description": "Complex integrations or custom development",
           "features": [
-            "Everything in Sprint M",
+            "Everything in Silver M",
             "End-to-end automation",
-            "Custom web application (MVP)",
-            "Complex AI pipeline",
+            "Web application (initial version)",
+            "Advanced AI flow",
             "Integration of 3+ tools"
           ]
         }
       }
     },
     "retainer": {
-      "name": "Retainer",
+      "name": "Gold",
       "description": "We maintain, improve, and expand implemented solutions.",
-      "cta": "Subscribe",
+      "cta": "Get Started",
       "tiers": {
         "essential": {
-          "name": "Essential",
+          "name": "S",
           "price": "$500/mo",
           "hours": "~5 hours",
           "description": "Maintenance and minor adjustments",
           "features": [
             "Solution monitoring",
-            "Bug fixes and adjustments",
+            "Fixes and adjustments",
             "Priority support",
-            "Monthly sync call"
+            "Monthly follow-up call"
           ]
         },
         "growth": {
-          "name": "Growth",
+          "name": "M",
           "price": "$1,000/mo",
           "hours": "~12 hours",
           "description": "Active improvements and new features",
           "features": [
-            "Everything in Essential",
+            "Everything in Gold S",
             "Improvements and iterations",
             "New small features",
-            "Slack/WhatsApp communication"
+            "Direct communication"
           ]
         },
         "scale": {
-          "name": "Scale",
+          "name": "L",
           "price": "$2,000/mo",
           "hours": "~25 hours",
           "description": "Continuous development and priority support",
           "features": [
-            "Everything in Growth",
+            "Everything in Gold M",
             "Continuous development",
             "24/7 priority support",
-            "Monthly technical strategy"
+            "Monthly strategy session"
           ]
         }
       }
     },
+    "note": "All prices in USD",
     "packages": {
       "title": "Packages",
       "subtitle": "Bundle services and save",
       "items": {
         "starter": {
           "name": "Starter",
-          "includes": "Diagnosis + Sprint S",
+          "includes": "Bronze + Silver S",
           "price": "$1,800",
           "savings": "Save $200"
         },
         "growth": {
           "name": "Growth",
-          "includes": "Diagnosis + Sprint M + 3 months Essential",
+          "includes": "Bronze + Silver M + 3 months Gold S",
           "price": "$4,700",
           "savings": "Save $300"
         },
         "scale": {
           "name": "Scale",
-          "includes": "Diagnosis + Sprint L + 3 months Growth",
+          "includes": "Bronze + Silver L + 3 months Gold M",
           "price": "$7,700",
           "savings": "Save $800"
         }
@@ -191,8 +192,8 @@
     "label": "04 — Products",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
-    "subtitle": "Our proprietary products vertical.",
-    "description": "The best products don't come from ideas — they come from real friction.",
+    "subtitle": "Where we create our own products.",
+    "description": "We build what the world needs.",
     "content": "Factory takes the patterns we detect while solving problems and turns them into independent products that scale globally.",
     "status": "We're currently building. Stay tuned.",
     "badge": "In Development"
@@ -201,8 +202,8 @@
     "label": "05 — Research",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Labs",
-    "subtitle": "Our research and development vertical.",
-    "description": "We explore the future of technology to build tomorrow's present.",
+    "subtitle": "Where we research and experiment.",
+    "description": "We explore the future of technology.",
     "content": "Labs is where we experiment with emerging technologies, develop internal capabilities, and prepare the innovations that will define our next products and services.",
     "status": "Coming Soon",
     "badge": "Planned",

@@ -8,11 +8,11 @@
   },
   "hero": {
     "title": "Dinnartec",
-    "tagline": "Innovando el futuro, mejorando el presente.",
-    "description": "Somos una empresa de tecnología que construye soluciones con IA para optimizar negocios y crear productos que escalan globalmente.",
+    "tagline": "Tecnología inteligente para problemas reales",
+    "description": "Soluciones basadas en IA que te ahorran tiempo y dinero.",
     "cta": "Agenda una llamada",
     "learnMore": "Saber más",
-    "badge": "Empresa de Tecnología"
+    "badge": "IA · Automatización · Desarrollo"
   },
   "experience": {
     "text": "Respaldados por experiencia en"
@@ -21,24 +21,24 @@
     "label": "01 — Acerca de",
     "title": "¿Qué es Dinnartec?",
     "description": "Dinnartec es una empresa de tecnología fundada por desarrolladores con un objetivo: construir soluciones que transformen industrias.",
-    "content": "No somos una agencia tradicional. Somos builders que combinan ejecución técnica con pensamiento estratégico. Nacimos con la mentalidad de las grandes empresas tecnológicas, entendiendo que el camino se construye paso a paso.",
-    "pillars": "Nuestro nombre representa nuestros pilares:",
+    "content": "Combinamos estrategia con ejecución. No solo planeamos, construimos. Y lo hacemos paso a paso.",
+    "pillars": "Nuestros pilares:",
     "pillarItems": [
-      { "name": "Desarrollo", "description": "Construimos software con excelencia técnica" },
-      { "name": "Investigación", "description": "Exploramos nuevas tecnologías y metodologías" },
+      { "name": "Desarrollo", "description": "Construimos software que funciona" },
+      { "name": "Investigación", "description": "Exploramos nuevas formas de resolver problemas" },
       { "name": "Innovación", "description": "Creamos soluciones originales a problemas reales" },
       { "name": "Adaptación", "description": "Evolucionamos con el mercado y sus necesidades" },
       { "name": "Revolución", "description": "Transformamos industrias, no solo participamos" },
-      { "name": "Tecnología", "description": "Nuestro core, nuestra herramienta, nuestro medio" }
+      { "name": "Tecnología", "description": "El motor detrás de todo lo que hacemos" }
     ]
   },
   "solutions": {
     "label": "02 — Servicios",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
-    "subtitle": "Optimizamos negocios con tecnología e IA.",
-    "description": "Identificamos ineficiencias, diseñamos estrategias e implementamos soluciones que generan impacto real: más ingresos, menos costos, mayor eficiencia.",
-    "tagline": "No vendemos horas. Vendemos resultados.",
+    "subtitle": "IA aplicada a tu negocio.",
+    "description": "Detectamos lo que frena tu negocio y lo solucionamos. Más ingresos, menos costos, mayor eficiencia.",
+    "tagline": "Del problema a la solución. Sin rodeos.",
     "cta": "Hablemos de tu proyecto",
     "steps": {
       "diagnosis": {
@@ -46,11 +46,11 @@
         "description": "Analizamos tu negocio para identificar oportunidades de alto impacto"
       },
       "sprint": {
-        "title": "Sprint de Optimización",
-        "description": "Ejecutamos soluciones concretas en ciclos cortos (2-4 semanas)"
+        "title": "Implementación",
+        "description": "Ejecutamos soluciones concretas en 2-4 semanas"
       },
       "support": {
-        "title": "Acompañamiento continuo",
+        "title": "Soporte",
         "description": "Mantenemos, ajustamos y mejoramos las soluciones implementadas"
       }
     }
@@ -60,23 +60,23 @@
     "title": "Planes & Precios",
     "subtitle": "Elige el plan que mejor se adapte a tu negocio",
     "diagnosis": {
-      "name": "Diagnóstico",
+      "name": "Bronze",
       "price": "$500",
       "duration": "5-7 días",
       "description": "Entendemos tu negocio, identificamos oportunidades y creamos un plan de acción.",
       "features": [
-        "Discovery call (1-2 horas)",
+        "Llamada inicial (1-2 horas)",
         "Análisis de procesos actuales",
-        "Identificación de quick wins",
-        "Roadmap priorizado",
+        "Identificación de mejoras rápidas",
+        "Hoja de ruta priorizada",
         "Plan de acción con estimaciones"
       ],
       "cta": "Empezar"
     },
     "sprint": {
-      "name": "Sprint",
-      "description": "Ejecutamos soluciones concretas en ciclos cortos y enfocados.",
-      "cta": "Empezar Sprint",
+      "name": "Silver",
+      "description": "Ejecutamos soluciones concretas en pocas semanas.",
+      "cta": "Empezar",
       "tiers": {
         "s": {
           "name": "S",
@@ -84,11 +84,11 @@
           "duration": "2 semanas",
           "description": "Ideal para una automatización o integración",
           "features": [
-            "Scope definido",
+            "Alcance definido",
             "Diseño + implementación",
-            "Testing y deploy",
+            "Pruebas y lanzamiento",
             "Documentación",
-            "2 semanas de bug fixes"
+            "2 semanas de correcciones"
           ]
         },
         "m": {
@@ -97,90 +97,91 @@
           "duration": "3-4 semanas",
           "description": "Múltiples automatizaciones o implementación de IA",
           "features": [
-            "Todo lo del Sprint S",
+            "Todo lo del Silver S",
             "2-3 automatizaciones conectadas",
-            "Implementación de IA con lógica custom",
-            "Dashboard o herramienta de reportes",
-            "Integración multi-sistema"
+            "Implementación de IA personalizada",
+            "Panel de control o reportes",
+            "Integración de múltiples sistemas"
           ]
         },
         "l": {
           "name": "L",
           "price": "$5,000",
           "duration": "4-6 semanas",
-          "description": "Integraciones complejas o desarrollo custom",
+          "description": "Integraciones complejas o desarrollo a medida",
           "features": [
-            "Todo lo del Sprint M",
-            "Automatización end-to-end",
-            "Aplicación web custom (MVP)",
-            "Pipeline de IA complejo",
+            "Todo lo del Silver M",
+            "Automatización de inicio a fin",
+            "Aplicación web (versión inicial)",
+            "Flujo de IA avanzado",
             "Integración de 3+ herramientas"
           ]
         }
       }
     },
     "retainer": {
-      "name": "Retainer",
+      "name": "Gold",
       "description": "Mantenemos, mejoramos y expandimos las soluciones implementadas.",
-      "cta": "Suscribirse",
+      "cta": "Empezar",
       "tiers": {
         "essential": {
-          "name": "Esencial",
+          "name": "S",
           "price": "$500/mes",
           "hours": "~5 horas",
           "description": "Mantenimiento y ajustes menores",
           "features": [
             "Monitoreo de soluciones",
-            "Bug fixes y ajustes",
+            "Correcciones y ajustes",
             "Soporte prioritario",
-            "Sync call mensual"
+            "Llamada mensual de seguimiento"
           ]
         },
         "growth": {
-          "name": "Growth",
+          "name": "M",
           "price": "$1,000/mes",
           "hours": "~12 horas",
-          "description": "Mejoras activas y nuevas features",
+          "description": "Mejoras activas y nuevas funcionalidades",
           "features": [
-            "Todo lo del Esencial",
+            "Todo lo del Gold S",
             "Mejoras e iteraciones",
-            "Nuevas features pequeñas",
-            "Comunicación Slack/WhatsApp"
+            "Nuevas funcionalidades pequeñas",
+            "Comunicación directa"
           ]
         },
         "scale": {
-          "name": "Scale",
+          "name": "L",
           "price": "$2,000/mes",
           "hours": "~25 horas",
           "description": "Desarrollo continuo y soporte prioritario",
           "features": [
-            "Todo lo del Growth",
+            "Todo lo del Gold M",
             "Desarrollo continuo",
             "Soporte prioritario 24/7",
-            "Estrategia técnica mensual"
+            "Estrategia mensual"
           ]
         }
       }
     },
+    "note": "Todos los precios en USD",
     "packages": {
       "title": "Paquetes",
       "subtitle": "Combina servicios y ahorra",
       "items": {
         "starter": {
           "name": "Starter",
-          "includes": "Diagnóstico + Sprint S",
+          "includes": "Bronze + Silver S",
           "price": "$1,800",
           "savings": "Ahorra $200"
         },
         "growth": {
           "name": "Growth",
-          "includes": "Diagnóstico + Sprint M + 3 meses Esencial",
+          "includes": "Bronze + Silver M + 3 meses Gold S",
           "price": "$4,700",
           "savings": "Ahorra $300"
         },
         "scale": {
           "name": "Scale",
-          "includes": "Diagnóstico + Sprint L + 3 meses Growth",
+          "includes": "Bronze + Silver L + 3 meses Gold M",
           "price": "$7,700",
           "savings": "Ahorra $800"
         }
@@ -191,8 +192,8 @@
     "label": "04 — Productos",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
-    "subtitle": "Nuestra vertical de productos propios.",
-    "description": "Los mejores productos no nacen de ideas — nacen de fricción real.",
+    "subtitle": "Donde creamos nuestros propios productos.",
+    "description": "Construimos lo que el mundo necesita.",
     "content": "Factory toma los patrones que detectamos resolviendo problemas y los convierte en productos independientes que escalan globalmente.",
     "status": "Estamos construyendo. Pronto verás más.",
     "badge": "En Desarrollo"
@@ -201,8 +202,8 @@
     "label": "05 — Investigación",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Labs",
-    "subtitle": "Nuestra vertical de investigación y desarrollo.",
-    "description": "Exploramos el futuro de la tecnología para construir el presente de mañana.",
+    "subtitle": "Donde investigamos y experimentamos.",
+    "description": "Exploramos el futuro de la tecnología.",
     "content": "Labs es donde experimentamos con tecnologías emergentes, desarrollamos capacidades internas y preparamos las innovaciones que definirán nuestros próximos productos y servicios.",
     "status": "Próximamente",
     "badge": "Planificado",

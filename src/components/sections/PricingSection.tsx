@@ -13,6 +13,7 @@ interface PricingSectionProps {
     label: string
     title: string
     subtitle: string
+    note: string
     diagnosis: {
       name: string
       price: string
@@ -339,6 +340,11 @@ export function PricingSection({ translations }: PricingSectionProps) {
               )
             })}
           </div>
+
+          {/* USD Note */}
+          <p className="mt-8 text-center font-body text-xs text-muted">
+            {translations.note}
+          </p>
         </div>
       </Container>
     </section>
