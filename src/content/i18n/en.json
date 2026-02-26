@@ -37,13 +37,13 @@
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
     "subtitle": "AI applied to your business.",
-    "description": "We detect what's slowing your business down and fix it. More revenue, lower costs, greater efficiency.",
+    "description": "We detect what's slowing you down and fix it. More revenue, lower costs, greater efficiency.",
     "tagline": "From problem to solution. No detours.",
     "cta": "Let's talk about your project",
     "steps": {
       "diagnosis": {
         "title": "Diagnosis",
-        "description": "We analyze your business to identify high-impact opportunities"
+        "description": "We analyze your operation to identify high-impact opportunities"
       },
       "sprint": {
         "title": "Implementation",
@@ -58,7 +58,7 @@
   "pricing": {
     "label": "03 — Pricing",
     "title": "Plans & Pricing",
-    "subtitle": "Choose the plan that best fits your business",
+    "subtitle": "Find the perfect plan",
     "diagnosis": {
       "name": "Bronze",
       "price": "$500",

@@ -37,13 +37,13 @@
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
     "subtitle": "IA aplicada a tu negocio.",
-    "description": "Detectamos lo que frena tu negocio y lo solucionamos. Más ingresos, menos costos, mayor eficiencia.",
+    "description": "Detectamos lo que te frena y lo solucionamos. Más ingresos, menos costos, mayor eficiencia.",
     "tagline": "Del problema a la solución. Sin rodeos.",
     "cta": "Hablemos de tu proyecto",
     "steps": {
       "diagnosis": {
         "title": "Diagnóstico",
-        "description": "Analizamos tu negocio para identificar oportunidades de alto impacto"
+        "description": "Analizamos tu operación para identificar oportunidades de alto impacto"
       },
       "sprint": {
         "title": "Implementación",
@@ -58,7 +58,7 @@
   "pricing": {
     "label": "03 — Precios",
     "title": "Planes & Precios",
-    "subtitle": "Elige el plan que mejor se adapte a tu negocio",
+    "subtitle": "Encuentra el plan perfecto",
     "diagnosis": {
       "name": "Bronze",
       "price": "$500",
