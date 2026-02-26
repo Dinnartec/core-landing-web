@@ -3,6 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
 import { Header } from '@/components/layout'
 import {
   HeroSection,
+  ExperienceBanner,
   AboutSection,
   SolutionsSection,
   PricingSection,
@@ -45,6 +46,13 @@ const t = getTranslations(lang)
         cta: t('hero.cta'),
         learnMore: t('hero.learnMore'),
         badge: t('hero.badge'),
+      }}
+    />
+
+    <ExperienceBanner
+      lang={lang}
+      translations={{
+        text: t('experience.text'),
       }}
     />
 

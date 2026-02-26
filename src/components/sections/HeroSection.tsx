@@ -16,7 +16,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ translations }: HeroSectionProps) {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pt-20">
+    <section className="relative flex min-h-screen items-center overflow-hidden pb-20 pt-20 md:pb-28">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-gray-100 to-transparent opacity-60 blur-3xl" />
         <div className="absolute -left-20 bottom-1/4 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-gray-50 to-transparent opacity-40 blur-3xl" />
