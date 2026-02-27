@@ -57,40 +57,40 @@ export function FactorySection({ translations }: FactorySectionProps) {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {translations.products && translations.products.map((product, idx) => (
-                <div key={idx} className="group relative border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/30 hover:bg-white/10 overflow-hidden flex flex-col">
-                    <div className="h-48 w-full overflow-hidden bg-black relative">
-                        <img 
-                            src={product.screenshot} 
-                            alt={product.name}
-                            className="w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                    </div>
-                    <div className="p-6 flex flex-col flex-1">
-                        <h3 className="font-display text-2xl font-bold text-white mb-2">{product.name}</h3>
-                        <p className="font-body text-sm text-white/70 leading-relaxed mb-6 flex-1">
-                            {product.description}
-                        </p>
-                        <a 
-                            href={product.link}
-                            className="inline-flex items-center text-xs font-medium uppercase tracking-widest text-white/80 hover:text-white transition-colors"
-                        >
-                            View Product <HiArrowRight className="ml-2 h-4 w-4" />
-                        </a>
-                    </div>
+        {translations.products && translations.products.length > 0 ? (
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {translations.products.map((product, idx) => (
+              <div key={idx} className="group relative border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/30 hover:bg-white/10 overflow-hidden flex flex-col">
+                <div className="h-48 w-full overflow-hidden bg-black relative">
+                  <img
+                    src={product.screenshot}
+                    alt={product.name}
+                    className="w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                 </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="font-display text-2xl font-bold text-white mb-2">{product.name}</h3>
+                  <p className="font-body text-sm text-white/70 leading-relaxed mb-6 flex-1">
+                    {product.description}
+                  </p>
+                  <a
+                    href={product.link}
+                    className="inline-flex items-center text-xs font-medium uppercase tracking-widest text-white/80 hover:text-white transition-colors"
+                  >
+                    View Product <HiArrowRight className="ml-2 h-4 w-4" />
+                  </a>
+                </div>
+              </div>
             ))}
-        </div>
-
-        <div className="mt-16 flex justify-center">
+          </div>
+        ) : (
+          <div className="mt-16 flex justify-center">
             <div className="group relative inline-flex items-center gap-4 border border-white/20 bg-white/5 px-8 py-6 transition-all duration-300 hover:border-white/40 hover:bg-white/10">
               <div className="relative flex items-center justify-center">
                 <div className="absolute h-3 w-3 animate-ping rounded-full bg-white/20" />
                 <div className="relative h-3 w-3 rounded-full bg-white" />
               </div>
-
               <div className="text-left">
                 <p className="font-display text-lg font-bold tracking-tight">
                   {translations.status}
@@ -101,6 +101,7 @@ export function FactorySection({ translations }: FactorySectionProps) {
               </div>
             </div>
           </div>
+        )}
       </Container>
     </section>
   )

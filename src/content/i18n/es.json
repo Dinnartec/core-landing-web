@@ -132,28 +132,9 @@
     "subtitle": "Productos propios creados y listos para usar.",
     "description": "Construimos software que el mercado necesita.",
     "content": "Toma ventaja de nuestras plataformas establecidas y acelera tus resultados con soluciones probadas.",
-    "status": "Explora nuestros productos:",
-    "badge": "Disponibles",
-    "products": [
-      {
-        "name": "Trives",
-        "description": "Plataforma integral para el manejo de servicios y comunidades.",
-        "link": "#trives",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives"
-      },
-      {
-        "name": "AF Colombia",
-        "description": "Plataforma completa para el manejo del backoffice, contabilidad y finanzas.",
-        "link": "#afcolombia",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia"
-      },
-      {
-        "name": "Real Estate OS",
-        "description": "Plataforma para manejo de venta de bienes raíces, CRM y más.",
-        "link": "#realestate",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS"
-      }
-    ]
+    "status": "Estamos construyendo. Pronto verás más.",
+    "badge": "En Desarrollo",
+    "products": []
   },
   "labs": {
     "label": "05 — Investigación",

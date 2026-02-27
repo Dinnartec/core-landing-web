@@ -132,28 +132,9 @@
     "subtitle": "Our own products, built and ready to scale.",
     "description": "We build software that the market needs.",
     "content": "Take advantage of our established platforms and accelerate your results with proven solutions.",
-    "status": "Explore our products:",
-    "badge": "Available",
-    "products": [
-      {
-        "name": "Trives",
-        "description": "Comprehensive platform for services and community management.",
-        "link": "#trives",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives"
-      },
-      {
-        "name": "AF Colombia",
-        "description": "Complete solution for back-office, accounting, and finance management.",
-        "link": "#afcolombia",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia"
-      },
-      {
-        "name": "Real Estate OS",
-        "description": "Platform for real estate sales management, CRM, and more.",
-        "link": "#realestate",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS"
-      }
-    ]
+    "status": "We're building. Stay tuned.",
+    "badge": "In Development",
+    "products": []
   },
   "labs": {
     "label": "05 — Research",

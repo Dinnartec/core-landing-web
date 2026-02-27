@@ -43,21 +43,14 @@ export function HeroSection({ translations }: HeroSectionProps) {
               </p>
             </div>
 
-            {/* CTAs - Aligned with bottom of grid */}
-            <div className="mt-16 flex animate-fade-up flex-col gap-4 opacity-0 stagger-3 sm:flex-row sm:items-center lg:mt-16">
+            {/* CTA */}
+            <div className="mt-16 animate-fade-up opacity-0 stagger-3 lg:mt-16">
               <a
                 href="#contact"
                 className="group inline-flex items-center justify-center gap-3 bg-black px-8 py-4 font-body text-sm font-medium uppercase tracking-widest text-white transition-all hover:gap-4 hover:bg-gray-800"
               >
                 {translations.cta}
                 <HiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
-
-              <a
-                href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 font-body text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:text-muted"
-              >
-                {translations.learnMore}
               </a>
             </div>
           </div>
@@ -68,17 +61,9 @@ export function HeroSection({ translations }: HeroSectionProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
               <img
                 src="/images/hero_premium_bg.png"
-                alt="Dinnartec Premium Technology"
+                alt="Dinnartec"
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
-              <div className="absolute bottom-6 left-6 z-20">
-                <span className="font-display text-2xl font-bold tracking-tighter text-white">
-                  Dinnartec
-                </span>
-                <p className="font-body text-xs uppercase tracking-widest text-white/50">
-                  Enterprise Technology
-                </p>
-              </div>
             </div>
           </div>
         </div>
