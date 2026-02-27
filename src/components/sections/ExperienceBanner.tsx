@@ -10,18 +10,23 @@ interface ExperienceBannerProps {
 
 const companies = [
   {
-    name: 'Yuno',
-    logo: '/logos/yuno.jpeg',
-    url: 'https://y.uno/',
+    name: 'Crepes & Waffles',
+    logo: '/logos/crepes.png',
+    url: 'https://crepesywaffles.com/',
   },
   {
     name: 'Rappi',
-    logo: '/logos/rappi.jpeg',
+    logo: '/logos/rappi.png',
     url: 'https://www.rappi.com/',
   },
   {
+    name: 'Yuno',
+    logo: '/logos/yuno.png',
+    url: 'https://y.uno/',
+  },
+  {
     name: 'Linnda',
-    logo: '/logos/linnda.jpeg',
+    logo: '/logos/linnda.png',
     url: 'https://www.linnda.co/',
   },
 ]
@@ -48,7 +53,7 @@ export function ExperienceBanner({ translations }: ExperienceBannerProps) {
                 <img
                   src={company.logo}
                   alt={company.name}
-                  className="h-10 w-auto object-contain md:h-14"
+                  className="h-10 w-24 object-contain md:h-12 md:w-32"
                 />
               </a>
             ))}
