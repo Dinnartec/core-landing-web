@@ -7,11 +7,11 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Dinnartec",
-    "tagline": "Smart technology for real problems",
-    "description": "AI-based solutions that save you time and money.",
-    "cta": "Schedule a call",
-    "learnMore": "Learn more",
+    "title": "We develop custom applications for your business",
+    "tagline": "Technology that drives your company in the AI era.",
+    "description": "Save time and money by automating processes with tech solutions and Artificial Intelligence.",
+    "cta": "I want to save time and money",
+    "learnMore": "Talk to an expert",
     "badge": "AI · Automation · Development"
   },
   "experience": {
@@ -19,184 +19,141 @@
   },
   "about": {
     "label": "01 — About",
-    "title": "What is Dinnartec?",
-    "description": "Dinnartec is a technology company founded by engineers with one goal: build solutions that transform industries.",
-    "content": "We combine strategy with execution. We don't just plan, we build. And we do it step by step.",
-    "pillars": "Our pillars:",
+    "title": "More than an agency, your tech team",
+    "description": "We started because we experienced firsthand the pain of not having good technology. We know how frustrating it is.",
+    "content": "That's why we create cutting-edge, scalable, and fully personalized technology. We go beyond being just an agency; we become your outsourced tech team (Tech Outsourcing).",
+    "pillars": "We understand your business, we feel your pain as our own:",
     "pillarItems": [
-      { "name": "Development", "description": "We build software that works" },
-      { "name": "Research", "description": "We explore new ways to solve problems" },
-      { "name": "Innovation", "description": "We create original solutions to real problems" },
-      { "name": "Adaptation", "description": "We evolve with the market and its needs" },
-      { "name": "Revolution", "description": "We transform industries, not just participate in them" },
-      { "name": "Technology", "description": "The engine behind everything we do" }
+      {
+        "name": "Custom Solutions",
+        "description": "We propose solutions based strictly on your exact needs."
+      },
+      {
+        "name": "At the Forefront",
+        "description": "We are up-to-date with the research and development of new technologies."
+      },
+      {
+        "name": "A Necessity, Not a Luxury",
+        "description": "Having software adapted to your business is indispensable to survive and grow today."
+      }
     ]
   },
   "solutions": {
     "label": "02 — Services",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
-    "subtitle": "AI applied to your business.",
-    "description": "We detect what's slowing you down and fix it. More revenue, lower costs, greater efficiency.",
-    "tagline": "From problem to solution. No detours.",
+    "subtitle": "We build software tailored to your business.",
+    "description": "We run a complete diagnosis to find current problems and foresee future ones. We create an action plan and take care of the entire implementation.",
+    "tagline": "In a fast-changing world, we stay ahead, constantly updating and upgrading your software.",
     "cta": "Let's talk",
     "steps": {
       "diagnosis": {
         "title": "Diagnosis",
-        "description": "We analyze your operation to identify high-impact opportunities"
+        "description": "We analyze your operation to create a concrete action plan and identify opportunities."
       },
       "sprint": {
         "title": "Implementation",
-        "description": "We execute concrete solutions in 2-4 weeks"
+        "description": "We execute the development and integrations, ready for your business."
       },
       "support": {
-        "title": "Support",
-        "description": "We maintain, adjust, and improve implemented solutions"
+        "title": "Continuous Evolution",
+        "description": "We maintain, adjust, and stay at the forefront updating your software."
       }
+    },
+    "examples": {
+      "title": "Examples of what we can build:",
+      "items": [
+        "Native Apps (iOS and Android)",
+        "Process and operations management platforms",
+        "Systems integrations and data analytics"
+      ]
     }
   },
   "pricing": {
     "label": "03 — Pricing",
     "title": "Plans & Pricing",
-    "subtitle": "Find the perfect plan",
+    "subtitle": "Have your app running in less than 3 months.",
     "diagnosis": {
-      "name": "Bronze",
-      "price": "$500",
-      "duration": "5-7 days",
-      "description": "We understand your business, identify opportunities, and create an action plan.",
-      "features": [
-        "Initial call (1-2 hours)",
-        "Current processes analysis",
-        "Quick improvements identification",
-        "Prioritized roadmap",
-        "Action plan with estimates"
-      ],
-      "cta": "Get Started"
-    },
-    "sprint": {
-      "name": "Silver",
-      "description": "We execute concrete solutions in a few weeks.",
-      "cta": "Get Started",
+      "name": "By Project",
+      "description": "Initial diagnosis followed by a custom implementation.",
+      "cta": "Start Diagnosis",
       "tiers": {
-        "s": {
-          "name": "S",
-          "price": "$1,500",
-          "duration": "2 weeks",
-          "description": "Ideal for a single automation or integration",
+        "diagnosis": {
+          "name": "Diagnosis",
+          "price": "$500",
+          "duration": "Fixed price",
+          "description": "We understand your problem and create the roadmap.",
           "features": [
-            "Defined scope",
-            "Design + implementation",
-            "Testing and launch",
-            "Documentation",
-            "2 weeks of fixes"
+            "Business understanding",
+            "Current and future problems assessment",
+            "Technology roadmap",
+            "Action plan and estimation"
           ]
         },
-        "m": {
-          "name": "M",
-          "price": "$3,000",
-          "duration": "3-4 weeks",
-          "description": "Multiple automations or AI implementation",
+        "implementation": {
+          "name": "Implementation",
+          "price": "From $1,500",
+          "duration": "Variable",
+          "description": "The final value is defined by the outcome of the diagnosis.",
           "features": [
-            "Everything in Silver S",
-            "2-3 connected automations",
-            "Custom AI implementation",
-            "Dashboard or reporting tool",
-            "Multi-system integration"
-          ]
-        },
-        "l": {
-          "name": "L",
-          "price": "$5,000",
-          "duration": "4-6 weeks",
-          "description": "Complex integrations or custom development",
-          "features": [
-            "Everything in Silver M",
-            "End-to-end automation",
-            "Web application (initial version)",
-            "Advanced AI flow",
-            "Integration of 3+ tools"
+            "Action plan implementation",
+            "Custom software development",
+            "Testing and quality assurance",
+            "Launch and training"
           ]
         }
       }
     },
     "retainer": {
-      "name": "Gold",
-      "description": "We maintain, improve, and expand implemented solutions.",
-      "cta": "Get Started",
+      "name": "Tech Outsourcing",
+      "description": "Your outsourced tech team that scales with your business.",
+      "cta": "Build my team",
       "tiers": {
-        "essential": {
-          "name": "S",
-          "price": "$500/mo",
-          "hours": "~5 hours",
-          "description": "Maintenance and minor adjustments",
+        "base": {
+          "name": "Core Team",
+          "price": "From $3,000/mo",
+          "duration": "Monthly",
+          "description": "Includes a PM and a Developer.",
           "features": [
-            "Solution monitoring",
-            "Fixes and adjustments",
-            "Priority support",
-            "Monthly follow-up call"
-          ]
-        },
-        "growth": {
-          "name": "M",
-          "price": "$1,000/mo",
-          "hours": "~12 hours",
-          "description": "Active improvements and new features",
-          "features": [
-            "Everything in Gold S",
-            "Improvements and iterations",
-            "New small features",
-            "Direct communication"
-          ]
-        },
-        "scale": {
-          "name": "L",
-          "price": "$2,000/mo",
-          "hours": "~25 hours",
-          "description": "Continuous development and priority support",
-          "features": [
-            "Everything in Gold M",
-            "Continuous development",
-            "24/7 priority support",
-            "Monthly strategy session"
+            "1 Dedicated Project Manager",
+            "1 Senior Developer",
+            "Support and continuous development",
+            "Scalable based on your needs"
           ]
         }
       }
     },
-    "note": "All prices in USD",
-    "packages": {
-      "title": "Packages",
-      "subtitle": "Bundle services and save",
-      "items": {
-        "starter": {
-          "name": "Starter",
-          "includes": "Bronze + Silver S",
-          "price": "$1,800",
-          "savings": "Save $200"
-        },
-        "growth": {
-          "name": "Growth",
-          "includes": "Bronze + Silver M + 3 months Gold S",
-          "price": "$4,500",
-          "savings": "Save $500"
-        },
-        "scale": {
-          "name": "Scale",
-          "includes": "Bronze + Silver L + 3 months Gold M",
-          "price": "$7,500",
-          "savings": "Save $1,000"
-        }
-      }
-    }
+    "note": "All prices in USD."
   },
   "factory": {
     "label": "04 — Products",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
-    "subtitle": "Where we create our own products.",
-    "description": "We build what the world needs.",
-    "content": "Factory takes the patterns we detect while solving problems and turns them into independent products that scale globally.",
-    "status": "We're currently building. Stay tuned.",
-    "badge": "In Development"
+    "subtitle": "Our own products, built and ready to scale.",
+    "description": "We build software that the market needs.",
+    "content": "Take advantage of our established platforms and accelerate your results with proven solutions.",
+    "status": "Explore our products:",
+    "badge": "Available",
+    "products": [
+      {
+        "name": "Trives",
+        "description": "Comprehensive platform for services and community management.",
+        "link": "#trives",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives"
+      },
+      {
+        "name": "AF Colombia",
+        "description": "Complete solution for back-office, accounting, and finance management.",
+        "link": "#afcolombia",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia"
+      },
+      {
+        "name": "Real Estate OS",
+        "description": "Platform for real estate sales management, CRM, and more.",
+        "link": "#realestate",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS"
+      }
+    ]
   },
   "labs": {
     "label": "05 — Research",
@@ -229,11 +186,11 @@
     "cta": "Schedule a call",
     "form": {
       "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send message",
-      "success": "Message sent successfully",
-      "error": "Error sending message"
+      "whatsapp": "WhatsApp",
+      "message": "Tell us what you want to build or what problem you have",
+      "submit": "Open WhatsApp",
+      "success": "Redirecting to WhatsApp...",
+      "error": "Error"
     },
     "alternative": "Or email us directly at"
   },
@@ -242,5 +199,8 @@
     "navigation": "Navigation",
     "connect": "Connect",
     "copyright": "© 2026 Dinnartec. All rights reserved."
+  },
+  "socialProof": {
+    "text": "Our team has worked with companies like:"
   }
 }

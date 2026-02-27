@@ -16,7 +16,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ translations }: HeroSectionProps) {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pb-8 pt-20 md:pb-12">
+    <section className="relative flex min-h-[85vh] items-center overflow-hidden pb-8 pt-20 md:pb-12">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-gray-100 to-transparent opacity-60 blur-3xl" />
         <div className="absolute -left-20 bottom-1/4 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-gray-50 to-transparent opacity-40 blur-3xl" />
@@ -44,7 +44,7 @@ export function HeroSection({ translations }: HeroSectionProps) {
             </div>
 
             {/* CTAs - Aligned with bottom of grid */}
-            <div className="mt-10 flex animate-fade-up flex-col gap-4 opacity-0 stagger-3 sm:flex-row sm:items-center lg:mt-0">
+            <div className="mt-16 flex animate-fade-up flex-col gap-4 opacity-0 stagger-3 sm:flex-row sm:items-center lg:mt-16">
               <a
                 href="#contact"
                 className="group inline-flex items-center justify-center gap-3 bg-black px-8 py-4 font-body text-sm font-medium uppercase tracking-widest text-white transition-all hover:gap-4 hover:bg-gray-800"
@@ -62,31 +62,22 @@ export function HeroSection({ translations }: HeroSectionProps) {
             </div>
           </div>
 
-          {/* Right Column - D Grid */}
+          {/* Right Column - Image graphic */}
           <div className="relative hidden lg:col-span-5 lg:flex lg:items-center lg:justify-end">
-            <div className="relative h-[500px] w-full max-w-md">
-              <div className="absolute inset-0 grid grid-cols-6 grid-rows-6 gap-2 opacity-20">
-                {[...Array(36)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="rounded-sm bg-black transition-opacity duration-500"
-                    style={{
-                      opacity: Math.random() > 0.5 ? 0.3 : 0.1,
-                      animationDelay: `${i * 0.05}s`,
-                    }}
-                  />
-                ))}
-              </div>
-
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <div className="relative">
-                  <div className="absolute -inset-4 animate-pulse rounded-full border border-border" />
-                  <div className="absolute -inset-8 rounded-full border border-border/50" />
-                  <div className="absolute -inset-12 rounded-full border border-border/25" />
-                  <span className="font-display text-8xl font-bold tracking-tighter">
-                    D
-                  </span>
-                </div>
+            <div className="relative h-[500px] w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+              <img
+                src="/images/hero_premium_bg.png"
+                alt="Dinnartec Premium Technology"
+                className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="absolute bottom-6 left-6 z-20">
+                <span className="font-display text-2xl font-bold tracking-tighter text-white">
+                  Dinnartec
+                </span>
+                <p className="font-body text-xs uppercase tracking-widest text-white/50">
+                  Enterprise Technology
+                </p>
               </div>
             </div>
           </div>

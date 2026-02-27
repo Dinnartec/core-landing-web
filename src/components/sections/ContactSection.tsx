@@ -13,7 +13,7 @@ interface ContactSectionProps {
     cta: string
     form: {
       name: string
-      email: string
+      whatsapp: string
       message: string
       submit: string
       success: string
@@ -27,7 +27,7 @@ export function ContactSection({ translations }: ContactSectionProps) {
   const [formState, setFormState] = useState<FormState>({ status: 'idle' })
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
+    whatsapp: '',
     message: '',
   })
 
@@ -36,18 +36,17 @@ export function ContactSection({ translations }: ContactSectionProps) {
     setFormState({ status: 'loading' })
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      })
+      const text = `Hola, mi nombre es ${formData.name}. ${formData.message}`
+      const waNumber = "573000000000" // Placeholder number
+      const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`
 
-      if (!response.ok) {
-        throw new Error('Failed to send')
-      }
-
-      setFormState({ status: 'success' })
-      setFormData({ name: '', email: '', message: '' })
+      // Slight delay to show loading state
+      setTimeout(() => {
+        setFormState({ status: 'success' })
+        setFormData({ name: '', whatsapp: '', message: '' })
+        window.open(waUrl, '_blank')
+      }, 500)
+      
     } catch {
       setFormState({ status: 'error', error: translations.form.error })
     }
@@ -116,9 +115,9 @@ export function ContactSection({ translations }: ContactSectionProps) {
             <div className="border border-white/10 bg-white/5 p-8 backdrop-blur-sm md:p-10">
               {formState.status === 'success' ? (
                 <div className="flex min-h-[300px] flex-col items-center justify-center text-center">
-                  <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full border border-white/20">
+                  <div className="mb-4 flex h-16 w-16 animate-bounce items-center justify-center rounded-full border border-green-500/20 bg-green-500/10">
                     <svg
-                      className="h-8 w-8 text-white"
+                      className="h-8 w-8 text-green-500"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -157,16 +156,17 @@ export function ContactSection({ translations }: ContactSectionProps) {
 
                   <div>
                     <label
-                      htmlFor="email"
+                      htmlFor="whatsapp"
                       className="mb-2 block font-body text-xs uppercase tracking-widest text-white/50"
                     >
-                      {translations.form.email}
+                      {translations.form.whatsapp}
                     </label>
                     <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
+                      type="text"
+                      id="whatsapp"
+                      name="whatsapp"
+                      placeholder="+57 300 000 0000"
+                      value={formData.whatsapp}
                       onChange={handleChange}
                       required
                       className="w-full border-b border-white/20 bg-transparent py-3 font-body text-white outline-none transition-colors placeholder:text-white/30 focus:border-white"

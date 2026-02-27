@@ -7,11 +7,11 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Dinnartec",
-    "tagline": "Tecnología inteligente para problemas reales",
-    "description": "Soluciones basadas en IA que te ahorran tiempo y dinero.",
-    "cta": "Agenda una llamada",
-    "learnMore": "Saber más",
+    "title": "Desarrollamos aplicaciones personalizadas para tu negocio",
+    "tagline": "Tecnología que impulsa tu empresa en la era de la IA.",
+    "description": "Ahorra tiempo y dinero automatizando procesos con soluciones tecnológicas e Inteligencia Artificial.",
+    "cta": "Quiero ahorrar tiempo y dinero",
+    "learnMore": "Habla con un experto",
     "badge": "IA · Automatización · Desarrollo"
   },
   "experience": {
@@ -19,184 +19,141 @@
   },
   "about": {
     "label": "01 — Acerca de",
-    "title": "¿Qué es Dinnartec?",
-    "description": "Dinnartec es una empresa de tecnología fundada por ingenieros con un objetivo: construir soluciones que transformen industrias.",
-    "content": "Combinamos estrategia con ejecución. No solo planeamos, construimos. Y lo hacemos paso a paso.",
-    "pillars": "Nuestros pilares:",
+    "title": "Más que una agencia, tu equipo de desarrollo",
+    "description": "Nacimos porque vivimos en carne propia los dolores de no tener buena tecnología. Entendemos lo frustrante que es.",
+    "content": "Creamos tecnología de punta, escalable y totalmente personalizada. Vamos más allá de ser solo una agencia; nos convertimos en tu equipo de outsourcing tecnológico (Tech Outsourcing).",
+    "pillars": "Entendemos tu negocio, sentimos tus dolores como nuestros:",
     "pillarItems": [
-      { "name": "Desarrollo", "description": "Construimos software que funciona" },
-      { "name": "Investigación", "description": "Exploramos nuevas formas de resolver problemas" },
-      { "name": "Innovación", "description": "Creamos soluciones originales a problemas reales" },
-      { "name": "Adaptación", "description": "Evolucionamos con el mercado y sus necesidades" },
-      { "name": "Revolución", "description": "Transformamos industrias, no solo participamos" },
-      { "name": "Tecnología", "description": "El motor detrás de todo lo que hacemos" }
+      {
+        "name": "Soluciones Personalizadas",
+        "description": "Proponemos soluciones basadas estrictamente en tus necesidades."
+      },
+      {
+        "name": "A la Vanguardia",
+        "description": "Estamos al día con la investigación y el desarrollo de nuevas tecnologías."
+      },
+      {
+        "name": "Es Necesidad, no Lujo",
+        "description": "Tener software adaptado a tu negocio es indispensable para sobrevivir y crecer."
+      }
     ]
   },
   "solutions": {
     "label": "02 — Servicios",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
-    "subtitle": "IA aplicada a tu negocio.",
-    "description": "Detectamos lo que te frena y lo solucionamos. Más ingresos, menos costos, mayor eficiencia.",
-    "tagline": "Del problema a la solución. Sin rodeos.",
+    "subtitle": "Creamos software a la medida de tu negocio.",
+    "description": "Hacemos un diagnóstico completo para levantar los problemas actuales y prever los del futuro. Creamos un plan de acción y nos encargamos de toda la implementación.",
+    "tagline": "En un mundo que cambia rápido, nos mantenemos a la vanguardia, actualizando y mejorando tu software.",
     "cta": "Hablemos",
     "steps": {
       "diagnosis": {
         "title": "Diagnóstico",
-        "description": "Analizamos tu operación para identificar oportunidades de alto impacto"
+        "description": "Analizamos tu operación para crear un plan de acción concreto e identificar oportunidades."
       },
       "sprint": {
         "title": "Implementación",
-        "description": "Ejecutamos soluciones concretas en 2-4 semanas"
+        "description": "Ejecutamos el desarrollo y las integraciones, listos para tu negocio."
       },
       "support": {
-        "title": "Soporte",
-        "description": "Mantenemos, ajustamos y mejoramos las soluciones implementadas"
+        "title": "Evolución Continua",
+        "description": "Mantenemos, ajustamos y estamos a la vanguardia actualizando tu software."
       }
+    },
+    "examples": {
+      "title": "Ejemplos de lo que podemos construir:",
+      "items": [
+        "Apps nativas (iOS y Android)",
+        "Plataformas de gestión de procesos y operaciones",
+        "Integraciones de sistemas y analítica de datos"
+      ]
     }
   },
   "pricing": {
     "label": "03 — Precios",
     "title": "Planes & Precios",
-    "subtitle": "Encuentra el plan perfecto",
+    "subtitle": "Ten tu app funcionando en menos de 3 meses.",
     "diagnosis": {
-      "name": "Bronze",
-      "price": "$500",
-      "duration": "5-7 días",
-      "description": "Entendemos tu negocio, identificamos oportunidades y creamos un plan de acción.",
-      "features": [
-        "Llamada inicial (1-2 horas)",
-        "Análisis de procesos actuales",
-        "Identificación de mejoras rápidas",
-        "Hoja de ruta priorizada",
-        "Plan de acción con estimaciones"
-      ],
-      "cta": "Empezar"
-    },
-    "sprint": {
-      "name": "Silver",
-      "description": "Ejecutamos soluciones concretas en pocas semanas.",
-      "cta": "Empezar",
+      "name": "Por Proyecto",
+      "description": "Diagnóstico inicial seguido de una implementación a medida.",
+      "cta": "Comenzar Diagnóstico",
       "tiers": {
-        "s": {
-          "name": "S",
-          "price": "$1,500",
-          "duration": "2 semanas",
-          "description": "Ideal para una automatización o integración",
+        "diagnosis": {
+          "name": "Diagnóstico",
+          "price": "$500",
+          "duration": "Precio fijo",
+          "description": "Entendemos tu problema y creamos la hoja de ruta.",
           "features": [
-            "Alcance definido",
-            "Diseño + implementación",
-            "Pruebas y lanzamiento",
-            "Documentación",
-            "2 semanas de correcciones"
+            "Entendimiento del negocio",
+            "Levantamiento de problemas actuales y futuros",
+            "Hoja de ruta tecnológica",
+            "Plan de acción y estimación"
           ]
         },
-        "m": {
-          "name": "M",
-          "price": "$3,000",
-          "duration": "3-4 semanas",
-          "description": "Múltiples automatizaciones o implementación de IA",
+        "implementation": {
+          "name": "Implementación",
+          "price": "Desde $1,500",
+          "duration": "Variable",
+          "description": "El valor final se define con lo que salga en el diagnóstico.",
           "features": [
-            "Todo lo del Silver S",
-            "2-3 automatizaciones conectadas",
-            "Implementación de IA personalizada",
-            "Panel de control o reportes",
-            "Integración de múltiples sistemas"
-          ]
-        },
-        "l": {
-          "name": "L",
-          "price": "$5,000",
-          "duration": "4-6 semanas",
-          "description": "Integraciones complejas o desarrollo a medida",
-          "features": [
-            "Todo lo del Silver M",
-            "Automatización de inicio a fin",
-            "Aplicación web (versión inicial)",
-            "Flujo de IA avanzado",
-            "Integración de 3+ herramientas"
+            "Implementación del plan de acción",
+            "Desarrollo de software a la medida",
+            "Pruebas y aseguramiento de calidad",
+            "Lanzamiento y capacitaciones"
           ]
         }
       }
     },
     "retainer": {
-      "name": "Gold",
-      "description": "Mantenemos, mejoramos y expandimos las soluciones implementadas.",
-      "cta": "Empezar",
+      "name": "Tech Outsourcing",
+      "description": "Tu equipo de tecnología tercerizado que crece con tu negocio.",
+      "cta": "Armar mi equipo",
       "tiers": {
-        "essential": {
-          "name": "S",
-          "price": "$500/mes",
-          "hours": "~5 horas",
-          "description": "Mantenimiento y ajustes menores",
+        "base": {
+          "name": "Equipo Base",
+          "price": "Desde $3,000/mes",
+          "duration": "Mensual",
+          "description": "Incluye un PM y un Developer.",
           "features": [
-            "Monitoreo de soluciones",
-            "Correcciones y ajustes",
-            "Soporte prioritario",
-            "Llamada mensual de seguimiento"
-          ]
-        },
-        "growth": {
-          "name": "M",
-          "price": "$1,000/mes",
-          "hours": "~12 horas",
-          "description": "Mejoras activas y nuevas funcionalidades",
-          "features": [
-            "Todo lo del Gold S",
-            "Mejoras e iteraciones",
-            "Nuevas funcionalidades pequeñas",
-            "Comunicación directa"
-          ]
-        },
-        "scale": {
-          "name": "L",
-          "price": "$2,000/mes",
-          "hours": "~25 horas",
-          "description": "Desarrollo continuo y soporte prioritario",
-          "features": [
-            "Todo lo del Gold M",
-            "Desarrollo continuo",
-            "Soporte prioritario 24/7",
-            "Estrategia mensual"
+            "1 Project Manager dedicado",
+            "1 Developer Senior",
+            "Soporte y desarrollo continuo",
+            "Escalable según las necesidades"
           ]
         }
       }
     },
-    "note": "Todos los precios en USD",
-    "packages": {
-      "title": "Paquetes",
-      "subtitle": "Combina servicios y ahorra",
-      "items": {
-        "starter": {
-          "name": "Starter",
-          "includes": "Bronze + Silver S",
-          "price": "$1,800",
-          "savings": "Ahorra $200"
-        },
-        "growth": {
-          "name": "Growth",
-          "includes": "Bronze + Silver M + 3 meses Gold S",
-          "price": "$4,500",
-          "savings": "Ahorra $500"
-        },
-        "scale": {
-          "name": "Scale",
-          "includes": "Bronze + Silver L + 3 meses Gold M",
-          "price": "$7,500",
-          "savings": "Ahorra $1,000"
-        }
-      }
-    }
+    "note": "Todos los precios en USD."
   },
   "factory": {
     "label": "04 — Productos",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
-    "subtitle": "Donde creamos nuestros propios productos.",
-    "description": "Construimos lo que el mundo necesita.",
-    "content": "Factory toma los patrones que detectamos resolviendo problemas y los convierte en productos independientes que escalan globalmente.",
-    "status": "Estamos construyendo. Pronto verás más.",
-    "badge": "En Desarrollo"
+    "subtitle": "Productos propios creados y listos para usar.",
+    "description": "Construimos software que el mercado necesita.",
+    "content": "Toma ventaja de nuestras plataformas establecidas y acelera tus resultados con soluciones probadas.",
+    "status": "Explora nuestros productos:",
+    "badge": "Disponibles",
+    "products": [
+      {
+        "name": "Trives",
+        "description": "Plataforma integral para el manejo de servicios y comunidades.",
+        "link": "#trives",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives"
+      },
+      {
+        "name": "AF Colombia",
+        "description": "Plataforma completa para el manejo del backoffice, contabilidad y finanzas.",
+        "link": "#afcolombia",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia"
+      },
+      {
+        "name": "Real Estate OS",
+        "description": "Plataforma para manejo de venta de bienes raíces, CRM y más.",
+        "link": "#realestate",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS"
+      }
+    ]
   },
   "labs": {
     "label": "05 — Investigación",
@@ -229,11 +186,11 @@
     "cta": "Agenda una llamada",
     "form": {
       "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "submit": "Enviar mensaje",
-      "success": "Mensaje enviado correctamente",
-      "error": "Error al enviar el mensaje"
+      "whatsapp": "WhatsApp",
+      "message": "Cuéntanos qué quieres construir o qué problema tienes",
+      "submit": "Abrir WhatsApp",
+      "success": "Redirigiendo a WhatsApp...",
+      "error": "Error"
     },
     "alternative": "O escríbenos a"
   },
@@ -242,5 +199,8 @@
     "navigation": "Navegación",
     "connect": "Conecta",
     "copyright": "© 2026 Dinnartec. Todos los derechos reservados."
+  },
+  "socialProof": {
+    "text": "Nuestro equipo ha trabajado con empresas como:"
   }
 }
