@@ -37,7 +37,7 @@ export function ContactSection({ translations }: ContactSectionProps) {
 
     try {
       const text = `Hola, mi nombre es ${formData.name}. ${formData.message}`
-      const waNumber = "573000000000" // Placeholder number
+      const waNumber = "573154821335"
       const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`
 
       // Slight delay to show loading state
