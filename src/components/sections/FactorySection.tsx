@@ -21,6 +21,7 @@ interface FactorySectionProps {
     content: string
     status: string
     badge: string
+    viewProduct: string
     products: Product[]
   }
 }
@@ -78,7 +79,7 @@ export function FactorySection({ translations }: FactorySectionProps) {
                     href={product.link}
                     className="inline-flex items-center text-xs font-medium uppercase tracking-widest text-white/80 hover:text-white transition-colors"
                   >
-                    View Product <HiArrowRight className="ml-2 h-4 w-4" />
+                    {translations.viewProduct} <HiArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </div>
               </div>

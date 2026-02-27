@@ -36,7 +36,7 @@ export function ExperienceBanner({ translations }: ExperienceBannerProps) {
     <section className="border-b border-border bg-gray-50 py-8 md:py-10">
       <Container>
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-12">
-          <p className="font-body text-xs font-medium uppercase tracking-widest text-muted">
+          <p className="text-center font-body text-xs font-medium uppercase tracking-widest text-muted md:text-left">
             {translations.text}
           </p>
 
