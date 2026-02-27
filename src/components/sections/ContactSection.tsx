@@ -95,11 +95,7 @@ export function ContactSection({ translations }: ContactSectionProps) {
                 <HiArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
 
-              <div className="flex items-center gap-4 text-white/50">
-                <div className="h-px flex-1 bg-white/20" />
-                <span className="font-body text-xs uppercase tracking-widest">or</span>
-                <div className="h-px flex-1 bg-white/20" />
-              </div>
+              <div className="h-px w-full bg-white/20" />
 
               <div className="flex items-center gap-3">
                 <HiOutlineMail className="h-5 w-5 text-white/50" />
