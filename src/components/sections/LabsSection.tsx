@@ -38,7 +38,7 @@ export function LabsSection({ translations }: LabsSectionProps) {
   ]
 
   return (
-    <section id="labs" className="section relative bg-[#f5f5f5]">
+    <section id="labs" className="section relative border-t border-border">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -right-40 top-20 h-80 w-80 rounded-full bg-black/[0.02] blur-3xl" />
         <div className="absolute -left-20 bottom-40 h-60 w-60 rounded-full bg-black/[0.02] blur-3xl" />

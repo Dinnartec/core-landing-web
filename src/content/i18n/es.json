@@ -7,199 +7,161 @@
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Dinnartec",
-    "tagline": "Innovando el futuro, mejorando el presente.",
-    "description": "Somos una empresa de tecnología que construye soluciones con IA para optimizar negocios y crear productos que escalan globalmente.",
-    "cta": "Agenda una llamada",
-    "learnMore": "Saber más",
-    "badge": "Empresa de Tecnología"
+    "title": "Desarrollamos aplicaciones personalizadas para tu negocio",
+    "tagline": "Tecnología que impulsa tu empresa en la era de la IA.",
+    "description": "Ahorra tiempo y dinero automatizando procesos con soluciones tecnológicas e Inteligencia Artificial.",
+    "cta": "Quiero ahorrar tiempo y dinero",
+    "learnMore": "Habla con un experto",
+    "badge": "IA · Automatización · Desarrollo"
+  },
+  "experience": {
+    "text": "Respaldados por experiencia en"
   },
   "about": {
     "label": "01 — Acerca de",
-    "title": "¿Qué es Dinnartec?",
-    "description": "Dinnartec es una empresa de tecnología fundada por desarrolladores con un objetivo: construir soluciones que transformen industrias.",
-    "content": "No somos una agencia tradicional. Somos builders que combinan ejecución técnica con pensamiento estratégico. Nacimos con la mentalidad de las grandes empresas tecnológicas, entendiendo que el camino se construye paso a paso.",
-    "pillars": "Nuestro nombre representa nuestros pilares:",
+    "title": "Más que una agencia, tu equipo de desarrollo",
+    "description": "Nacimos porque vivimos en carne propia los dolores de no tener buena tecnología. Entendemos lo frustrante que es.",
+    "content": "Creamos tecnología de punta, escalable y totalmente personalizada. Vamos más allá de ser solo una agencia; nos convertimos en tu equipo de outsourcing tecnológico (Tech Outsourcing).",
+    "pillars": "Entendemos tu negocio, sentimos tus dolores como nuestros:",
     "pillarItems": [
-      { "name": "Desarrollo", "description": "Construimos software con excelencia técnica" },
-      { "name": "Investigación", "description": "Exploramos nuevas tecnologías y metodologías" },
-      { "name": "Innovación", "description": "Creamos soluciones originales a problemas reales" },
-      { "name": "Adaptación", "description": "Evolucionamos con el mercado y sus necesidades" },
-      { "name": "Revolución", "description": "Transformamos industrias, no solo participamos" },
-      { "name": "Tecnología", "description": "Nuestro core, nuestra herramienta, nuestro medio" }
+      {
+        "name": "Soluciones Personalizadas",
+        "description": "Proponemos soluciones basadas estrictamente en tus necesidades."
+      },
+      {
+        "name": "A la Vanguardia",
+        "description": "Estamos al día con la investigación y el desarrollo de nuevas tecnologías."
+      },
+      {
+        "name": "Es Necesidad, no Lujo",
+        "description": "Tener software adaptado a tu negocio es indispensable para sobrevivir y crecer."
+      }
     ]
   },
   "solutions": {
     "label": "02 — Servicios",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Solutions",
-    "subtitle": "Optimizamos negocios con tecnología e IA.",
-    "description": "Identificamos ineficiencias, diseñamos estrategias e implementamos soluciones que generan impacto real: más ingresos, menos costos, mayor eficiencia.",
-    "tagline": "No vendemos horas. Vendemos resultados.",
-    "cta": "Hablemos de tu proyecto",
+    "subtitle": "Creamos software a la medida de tu negocio.",
+    "description": "Hacemos un diagnóstico completo para levantar los problemas actuales y prever los del futuro. Creamos un plan de acción y nos encargamos de toda la implementación.",
+    "tagline": "En un mundo que cambia rápido, nos mantenemos a la vanguardia, actualizando y mejorando tu software.",
+    "cta": "Hablemos",
     "steps": {
       "diagnosis": {
         "title": "Diagnóstico",
-        "description": "Analizamos tu negocio para identificar oportunidades de alto impacto"
+        "description": "Analizamos tu operación para crear un plan de acción concreto e identificar oportunidades."
       },
       "sprint": {
-        "title": "Sprint de Optimización",
-        "description": "Ejecutamos soluciones concretas en ciclos cortos (2-4 semanas)"
+        "title": "Implementación",
+        "description": "Ejecutamos el desarrollo y las integraciones, listos para tu negocio."
       },
       "support": {
-        "title": "Acompañamiento continuo",
-        "description": "Mantenemos, ajustamos y mejoramos las soluciones implementadas"
+        "title": "Evolución Continua",
+        "description": "Mantenemos, ajustamos y estamos a la vanguardia actualizando tu software."
       }
+    },
+    "examples": {
+      "title": "Ejemplos de lo que podemos construir:",
+      "items": [
+        "Apps nativas (iOS y Android)",
+        "Plataformas de gestión de procesos y operaciones",
+        "Integraciones de sistemas y analítica de datos"
+      ]
     }
   },
   "pricing": {
     "label": "03 — Precios",
     "title": "Planes & Precios",
-    "subtitle": "Elige el plan que mejor se adapte a tu negocio",
+    "subtitle": "Ten tu app funcionando en menos de 3 meses.",
     "diagnosis": {
-      "name": "Diagnóstico",
-      "price": "$500",
-      "duration": "5-7 días",
-      "description": "Entendemos tu negocio, identificamos oportunidades y creamos un plan de acción.",
-      "features": [
-        "Discovery call (1-2 horas)",
-        "Análisis de procesos actuales",
-        "Identificación de quick wins",
-        "Roadmap priorizado",
-        "Plan de acción con estimaciones"
-      ],
-      "cta": "Empezar"
-    },
-    "sprint": {
-      "name": "Sprint",
-      "description": "Ejecutamos soluciones concretas en ciclos cortos y enfocados.",
-      "cta": "Empezar Sprint",
+      "name": "Por Proyecto",
+      "description": "Diagnóstico inicial seguido de una implementación a medida.",
+      "cta": "Comenzar Diagnóstico",
       "tiers": {
-        "s": {
-          "name": "S",
-          "price": "$1,500",
-          "duration": "2 semanas",
-          "description": "Ideal para una automatización o integración",
+        "diagnosis": {
+          "name": "Diagnóstico",
+          "price": "$500",
+          "duration": "Precio fijo",
+          "description": "Entendemos tu problema y creamos la hoja de ruta.",
           "features": [
-            "Scope definido",
-            "Diseño + implementación",
-            "Testing y deploy",
-            "Documentación",
-            "2 semanas de bug fixes"
+            "Entendimiento del negocio",
+            "Levantamiento de problemas actuales y futuros",
+            "Hoja de ruta tecnológica",
+            "Plan de acción y estimación"
           ]
         },
-        "m": {
-          "name": "M",
-          "price": "$3,000",
-          "duration": "3-4 semanas",
-          "description": "Múltiples automatizaciones o implementación de IA",
+        "implementation": {
+          "name": "Implementación",
+          "price": "Desde $1,500",
+          "duration": "Variable",
+          "description": "El valor final se define con lo que salga en el diagnóstico.",
           "features": [
-            "Todo lo del Sprint S",
-            "2-3 automatizaciones conectadas",
-            "Implementación de IA con lógica custom",
-            "Dashboard o herramienta de reportes",
-            "Integración multi-sistema"
-          ]
-        },
-        "l": {
-          "name": "L",
-          "price": "$5,000",
-          "duration": "4-6 semanas",
-          "description": "Integraciones complejas o desarrollo custom",
-          "features": [
-            "Todo lo del Sprint M",
-            "Automatización end-to-end",
-            "Aplicación web custom (MVP)",
-            "Pipeline de IA complejo",
-            "Integración de 3+ herramientas"
+            "Implementación del plan de acción",
+            "Desarrollo de software a la medida",
+            "Pruebas y aseguramiento de calidad",
+            "Lanzamiento y capacitaciones"
           ]
         }
       }
     },
     "retainer": {
-      "name": "Retainer",
-      "description": "Mantenemos, mejoramos y expandimos las soluciones implementadas.",
-      "cta": "Suscribirse",
+      "name": "Tech Outsourcing",
+      "description": "Tu equipo de tecnología tercerizado que crece con tu negocio.",
+      "cta": "Armar mi equipo",
       "tiers": {
-        "essential": {
-          "name": "Esencial",
-          "price": "$500/mes",
-          "hours": "~5 horas",
-          "description": "Mantenimiento y ajustes menores",
+        "base": {
+          "name": "Equipo Base",
+          "price": "Desde $3,000/mes",
+          "duration": "Mensual",
+          "description": "Incluye un PM y un Developer.",
           "features": [
-            "Monitoreo de soluciones",
-            "Bug fixes y ajustes",
-            "Soporte prioritario",
-            "Sync call mensual"
-          ]
-        },
-        "growth": {
-          "name": "Growth",
-          "price": "$1,000/mes",
-          "hours": "~12 horas",
-          "description": "Mejoras activas y nuevas features",
-          "features": [
-            "Todo lo del Esencial",
-            "Mejoras e iteraciones",
-            "Nuevas features pequeñas",
-            "Comunicación Slack/WhatsApp"
-          ]
-        },
-        "scale": {
-          "name": "Scale",
-          "price": "$2,000/mes",
-          "hours": "~25 horas",
-          "description": "Desarrollo continuo y soporte prioritario",
-          "features": [
-            "Todo lo del Growth",
-            "Desarrollo continuo",
-            "Soporte prioritario 24/7",
-            "Estrategia técnica mensual"
+            "1 Project Manager dedicado",
+            "1 Developer Senior",
+            "Soporte y desarrollo continuo",
+            "Escalable según las necesidades"
           ]
         }
       }
     },
-    "packages": {
-      "title": "Paquetes",
-      "subtitle": "Combina servicios y ahorra",
-      "items": {
-        "starter": {
-          "name": "Starter",
-          "includes": "Diagnóstico + Sprint S",
-          "price": "$1,800",
-          "savings": "Ahorra $200"
-        },
-        "growth": {
-          "name": "Growth",
-          "includes": "Diagnóstico + Sprint M + 3 meses Esencial",
-          "price": "$4,700",
-          "savings": "Ahorra $300"
-        },
-        "scale": {
-          "name": "Scale",
-          "includes": "Diagnóstico + Sprint L + 3 meses Growth",
-          "price": "$7,700",
-          "savings": "Ahorra $800"
-        }
-      }
-    }
+    "note": "Todos los precios en USD."
   },
   "factory": {
     "label": "04 — Productos",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Factory",
-    "subtitle": "Nuestra vertical de productos propios.",
-    "description": "Los mejores productos no nacen de ideas — nacen de fricción real.",
-    "content": "Factory toma los patrones que detectamos resolviendo problemas y los convierte en productos independientes que escalan globalmente.",
-    "status": "Estamos construyendo. Pronto verás más.",
-    "badge": "En Desarrollo"
+    "subtitle": "Productos propios creados y listos para usar.",
+    "description": "Construimos software que el mercado necesita.",
+    "content": "Toma ventaja de nuestras plataformas establecidas y acelera tus resultados con soluciones probadas.",
+    "status": "Explora nuestros productos:",
+    "badge": "Disponibles",
+    "viewProduct": "Ver Producto",
+    "products": [
+      {
+        "name": "Trives",
+        "description": "Plataforma integral para el manejo de servicios y comunidades.",
+        "link": "#trives",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives"
+      },
+      {
+        "name": "AF Colombia",
+        "description": "Plataforma completa para el manejo del backoffice, contabilidad y finanzas.",
+        "link": "#afcolombia",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia"
+      },
+      {
+        "name": "Real Estate OS",
+        "description": "Plataforma para manejo de venta de bienes raíces, CRM y más.",
+        "link": "#realestate",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS"
+      }
+    ]
   },
   "labs": {
     "label": "05 — Investigación",
     "titlePrefix": "Dinnartec",
     "titleHighlight": "Labs",
-    "subtitle": "Nuestra vertical de investigación y desarrollo.",
-    "description": "Exploramos el futuro de la tecnología para construir el presente de mañana.",
+    "subtitle": "Donde investigamos y experimentamos.",
+    "description": "Exploramos el futuro de la tecnología.",
     "content": "Labs es donde experimentamos con tecnologías emergentes, desarrollamos capacidades internas y preparamos las innovaciones que definirán nuestros próximos productos y servicios.",
     "status": "Próximamente",
     "badge": "Planificado",
@@ -225,11 +187,11 @@
     "cta": "Agenda una llamada",
     "form": {
       "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "submit": "Enviar mensaje",
-      "success": "Mensaje enviado correctamente",
-      "error": "Error al enviar el mensaje"
+      "whatsapp": "WhatsApp",
+      "message": "Cuéntanos qué quieres construir o qué problema tienes",
+      "submit": "Abrir WhatsApp",
+      "success": "Redirigiendo a WhatsApp...",
+      "error": "Error"
     },
     "alternative": "O escríbenos a"
   },
@@ -238,5 +200,8 @@
     "navigation": "Navegación",
     "connect": "Conecta",
     "copyright": "© 2026 Dinnartec. Todos los derechos reservados."
+  },
+  "socialProof": {
+    "text": "Nuestro equipo ha trabajado con empresas como:"
   }
 }

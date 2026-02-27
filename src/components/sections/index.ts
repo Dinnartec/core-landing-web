@@ -1,4 +1,5 @@
 export { HeroSection } from './HeroSection'
+export { ExperienceBanner } from './ExperienceBanner'
 export { AboutSection } from './AboutSection'
 export { SolutionsSection } from './SolutionsSection'
 export { PricingSection } from './PricingSection'
