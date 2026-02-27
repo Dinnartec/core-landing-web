@@ -37,7 +37,7 @@ const pillarIcons = [
 
 export function AboutSection({ translations }: AboutSectionProps) {
   return (
-    <section id="about" className="section relative overflow-hidden border-t border-border">
+    <section id="about" className="section relative overflow-hidden bg-[#f5f5f5]">
       <div className="pointer-events-none absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-gray-50 to-transparent" />
 
       <Container className="relative">
