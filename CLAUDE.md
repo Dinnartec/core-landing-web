@@ -11,13 +11,13 @@ This is the main landing page for Dinnartec, a technology company. The site must
 
 ## Tech Stack
 
-- **Framework:** Astro
-- **UI Library:** React (for interactive components)
+- **Framework:** Astro 5
+- **UI Library:** React 19 (for interactive components)
 - **Icons:** React Icons
 - **UI Components:** shadcn/ui (optional, use when beneficial)
 - **Styling:** Tailwind CSS
-- **i18n:** astro-i18n or custom implementation
-- **Hosting:** Vercel (planned)
+- **i18n:** Custom (JSON-based)
+- **Hosting:** Vercel
 
 ---
 
@@ -138,18 +138,20 @@ Order classes consistently:
 ```json
 {
   "nav": {
-    "solutions": "Solutions",
-    "factory": "Factory",
+    "solutions": "Servicios",
+    "pricing": "Precios",
+    "factory": "Productos",
     "contact": "Contacto"
   },
   "hero": {
-    "tagline": "Innovando el futuro, mejorando el presente.",
-    "description": "Somos una empresa de tecnología...",
-    "cta": "Agenda una llamada"
+    "title": "Desarrollamos aplicaciones personalizadas para tu negocio",
+    "description": "Ahorra tiempo y dinero automatizando procesos...",
+    "cta": "Quiero ahorrar tiempo y dinero"
   },
   "solutions": {
-    "title": "Dinnartec Solutions",
-    "subtitle": "Optimizamos negocios con tecnología e IA."
+    "titlePrefix": "Dinnartec",
+    "titleHighlight": "Solutions",
+    "subtitle": "Creamos software a la medida de tu negocio."
   }
 }
 ```
@@ -286,24 +288,22 @@ export function SectionName({ lang }: SectionProps) {
 
 ### Contact Form Requirements
 
-- Fields: name, email, message
+- Fields: name, whatsapp, message
 - Validation: client-side with proper error states
-- Submission: send to dinnartec@gmail.com
-- Feedback: loading state, success message, error handling
+- Submission: Opens WhatsApp with pre-filled message
+- Feedback: Redirect to WhatsApp
 
 ### Implementation Pattern
 
 ```typescript
 interface FormData {
   name: string
-  email: string
+  whatsapp: string
   message: string
 }
 
-interface FormState {
-  status: 'idle' | 'loading' | 'success' | 'error'
-  error?: string
-}
+// Form submits by opening WhatsApp URL with message
+const whatsappUrl = `https://wa.me/${PHONE}?text=${encodedMessage}`
 ```
 
 ---
@@ -389,3 +389,13 @@ npm run format       # Format code with Prettier
 - [ ] Both languages tested (ES + EN)
 - [ ] Accessibility basics checked
 - [ ] No commented code
+
+---
+
+## Related Documentation
+
+For company-wide standards and context, see [core-docs](https://github.com/Dinnartec/core-docs):
+
+- `/company/` — Company identity, verticals, principles
+- `/standards/` — Code style, git conventions, naming
+- `/projects/core/core-landing-web.md` — Project overview
