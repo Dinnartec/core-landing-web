@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { HiArrowRight, HiOutlineMail } from 'react-icons/hi'
 import { Container } from '@/components/layout/Container'
-import { CONTACT_EMAIL, CALENDLY_URL } from '@/lib/constants'
+import { CONTACT_EMAIL, CALENDLY_URL, WHATSAPP_NUMBER } from '@/lib/constants'
 import type { Locale, FormState } from '@/types'
 
 interface ContactSectionProps {
@@ -36,9 +36,8 @@ export function ContactSection({ translations }: ContactSectionProps) {
     setFormState({ status: 'loading' })
 
     try {
-      const text = `Hola, mi nombre es ${formData.name}. ${formData.message}`
-      const waNumber = "573154821335"
-      const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`
+      const text = `Hola, mi nombre es ${formData.name}. Mi WhatsApp: ${formData.whatsapp}. ${formData.message}`
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`
 
       // Slight delay to show loading state
       setTimeout(() => {

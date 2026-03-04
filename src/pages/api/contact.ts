@@ -3,6 +3,15 @@ import { Resend } from 'resend'
 
 const resend = new Resend(import.meta.env.RESEND_API_KEY)
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+}
+
 export const prerender = false
 
 export const POST: APIRoute = async ({ request }) => {
@@ -17,17 +26,21 @@ export const POST: APIRoute = async ({ request }) => {
       )
     }
 
+    const safeName = escapeHtml(name)
+    const safeEmail = escapeHtml(email)
+    const safeMessage = escapeHtml(message)
+
     const { error } = await resend.emails.send({
       from: 'Dinnartec Web <onboarding@resend.dev>',
       to: ['dinnartec@gmail.com'],
       replyTo: email,
-      subject: `Nuevo mensaje de ${name}`,
+      subject: `Nuevo mensaje de ${safeName}`,
       html: `
         <h2>Nuevo mensaje desde dinnartec.com</h2>
-        <p><strong>Nombre:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Nombre:</strong> ${safeName}</p>
+        <p><strong>Email:</strong> ${safeEmail}</p>
         <p><strong>Mensaje:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
+        <p>${safeMessage.replace(/\n/g, '<br>')}</p>
       `,
     })
 

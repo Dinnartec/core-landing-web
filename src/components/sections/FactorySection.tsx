@@ -1,6 +1,6 @@
 import { HiArrowRight } from 'react-icons/hi'
 import { Container } from '@/components/layout/Container'
-import type { Locale, FormState } from '@/types'
+import type { Locale } from '@/types'
 
 // Product type
 type Product = {
