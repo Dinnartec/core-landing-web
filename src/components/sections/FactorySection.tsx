@@ -61,10 +61,10 @@ export function FactorySection({ translations }: FactorySectionProps) {
         </div>
 
         {translations.products && translations.products.length > 0 ? (
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className={`mt-12 grid gap-6 ${translations.products.length === 1 ? 'mx-auto max-w-lg' : translations.products.length === 2 ? 'md:grid-cols-2 max-w-3xl mx-auto' : 'md:grid-cols-3'}`}>
             {translations.products.map((product, idx) => (
               <div key={idx} className="group relative border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/30 hover:bg-white/10 overflow-hidden flex flex-col">
-                <div className="h-48 w-full overflow-hidden bg-black relative">
+                <div className="h-56 w-full overflow-hidden bg-black relative">
                   <img
                     src={product.screenshot}
                     alt={product.name}
