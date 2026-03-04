@@ -149,6 +149,7 @@ export function HomePage({ lang }: HomePageProps) {
             status: t('factory.status'),
             badge: t('factory.badge'),
             viewProduct: t('factory.viewProduct'),
+            inDevelopment: t('factory.inDevelopment'),
             products: t.array('factory.products'),
           }}
         />
