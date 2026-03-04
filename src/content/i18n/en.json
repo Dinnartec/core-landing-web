@@ -138,24 +138,10 @@
     "inDevelopment": "In development",
     "products": [
       {
-        "name": "Trives",
-        "description": "Comprehensive platform for services and community management.",
-        "link": "#trives",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives",
-        "status": "development"
-      },
-      {
-        "name": "AF Colombia",
+        "name": "Backoffice",
         "description": "Complete solution for back-office, accounting, and finance management.",
-        "link": "#afcolombia",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia",
-        "status": "development"
-      },
-      {
-        "name": "Real Estate OS",
-        "description": "Platform for real estate sales management, CRM, and more.",
-        "link": "#realestate",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS",
+        "link": "#backoffice",
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Backoffice",
         "status": "development"
       }
     ]
