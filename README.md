@@ -67,7 +67,7 @@ Push to `main` → Vercel auto-deploys.
 
 ## Docs
 
-- `dev/CLAUDE.md` — Architecture and conventions guide
-- `dev/CONTEXT.md` — Company context
-- `dev/LANDING_PAGE_DEFINITION.md` — Landing page specification
-- `dev/PENDING.md` — Pending tasks
+- `CLAUDE.md` — Architecture and conventions guide
+- `dev/README.md` — Dev folder overview
+- `dev/CONTEXT.md` — Project context
+- `dev/roadmaps/` — Planning documents

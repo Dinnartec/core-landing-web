@@ -11,7 +11,7 @@ export interface NavLink {
 
 export interface FormData {
   name: string
-  email: string
+  whatsapp: string
   message: string
 }
 

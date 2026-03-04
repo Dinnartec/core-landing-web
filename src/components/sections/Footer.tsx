@@ -1,6 +1,6 @@
 import { FaInstagram, FaXTwitter, FaTiktok } from 'react-icons/fa6'
 import { Container } from '@/components/layout/Container'
-import { SOCIAL_LINKS, CONTACT_EMAIL } from '@/lib/constants'
+import { SOCIAL_LINKS, CONTACT_EMAIL, NAV_LINKS } from '@/lib/constants'
 import type { Locale } from '@/types'
 
 interface FooterProps {
@@ -19,14 +19,6 @@ interface FooterProps {
     contact: string
   }
 }
-
-const navLinks = [
-  { key: 'solutions', href: '#solutions' },
-  { key: 'pricing', href: '#pricing' },
-  { key: 'factory', href: '#factory' },
-  { key: 'labs', href: '#labs' },
-  { key: 'contact', href: '#contact' },
-] as const
 
 const socialLinks = [
   { name: 'Instagram', href: SOCIAL_LINKS.instagram, icon: FaInstagram },
@@ -70,7 +62,7 @@ export function Footer({ lang, translations, navTranslations }: FooterProps) {
             <span className="mb-2 font-body text-xs font-medium uppercase tracking-widest text-muted">
               {translations.navigation}
             </span>
-            {navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <a
                 key={link.key}
                 href={link.href}

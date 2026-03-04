@@ -1,6 +1,9 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi'
 import { cn } from '@/lib/utils'
+import { NAV_LINKS } from '@/lib/constants'
 import type { Locale } from '@/types'
 
 interface HeaderProps {
@@ -13,14 +16,6 @@ interface HeaderProps {
     contact: string
   }
 }
-
-const navLinks = [
-  { key: 'solutions', href: '#solutions' },
-  { key: 'pricing', href: '#pricing' },
-  { key: 'factory', href: '#factory' },
-  { key: 'labs', href: '#labs' },
-  { key: 'contact', href: '#contact' },
-] as const
 
 export function Header({ lang, translations }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -67,7 +62,7 @@ export function Header({ lang, translations }: HeaderProps) {
           </a>
 
           <nav className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => (
+            {NAV_LINKS.map((link) => (
               <a
                 key={link.key}
                 href={link.href}
@@ -118,7 +113,7 @@ export function Header({ lang, translations }: HeaderProps) {
         </div>
 
         <nav className="container flex flex-col gap-6 pt-12">
-          {navLinks.map((link, index) => (
+          {NAV_LINKS.map((link, index) => (
             <a
               key={link.key}
               href={link.href}

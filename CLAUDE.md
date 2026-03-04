@@ -4,20 +4,20 @@
 
 This is the main landing page for Dinnartec, a technology company. The site must be bilingual (ES default / EN), responsive, and built with scalability and maintainability in mind.
 
-**Domain:** dinnartec.com  
+**Domain:** dinnartec.com
 **Repository:** core-landing-web
 
 ---
 
 ## Tech Stack
 
-- **Framework:** Astro
-- **UI Library:** React (for interactive components)
+- **Framework:** Next.js 16 (App Router)
+- **UI Library:** React 19
 - **Icons:** React Icons
 - **UI Components:** shadcn/ui (optional, use when beneficial)
 - **Styling:** Tailwind CSS
-- **i18n:** astro-i18n or custom implementation
-- **Hosting:** Vercel (planned)
+- **i18n:** Custom (JSON-based)
+- **Hosting:** Vercel
 
 ---
 
@@ -25,27 +25,31 @@ This is the main landing page for Dinnartec, a technology company. The site must
 
 ```
 src/
+├── app/
+│   ├── layout.tsx               # Root layout (HTML structure, metadata, fonts)
+│   ├── page.tsx                 # Spanish version (default)
+│   ├── en/
+│   │   └── page.tsx             # English version
+│   └── api/
+│       └── contact/
+│           └── route.ts         # Contact form API endpoint
 ├── components/
-│   ├── ui/                    # Base UI components (Button, Input, etc.)
-│   ├── layout/                # Header, Footer, Section wrappers
-│   └── sections/              # Page sections (Hero, About, Solutions, etc.)
+│   ├── HomePage.tsx             # Shared page content (used by both locales)
+│   ├── ui/                      # Base UI components (Button, Input, etc.)
+│   ├── layout/                  # Header, Container
+│   └── sections/                # Page sections (Hero, About, Solutions, etc.)
 ├── content/
 │   └── i18n/
-│       ├── es.json            # Spanish translations (default)
-│       └── en.json            # English translations
-├── layouts/
-│   └── BaseLayout.astro       # Main HTML structure
-├── pages/
-│   ├── index.astro            # Spanish version (default)
-│   └── en/
-│       └── index.astro        # English version
+│       ├── es.json              # Spanish translations (default)
+│       └── en.json              # English translations
 ├── styles/
-│   └── globals.css            # Global styles and Tailwind imports
+│   └── globals.css              # Global styles and Tailwind imports
 ├── lib/
-│   ├── utils.ts               # Utility functions
-│   └── constants.ts           # App-wide constants
+│   ├── utils.ts                 # Utility functions (cn)
+│   ├── i18n.ts                  # Translation helper (getTranslations)
+│   └── constants.ts             # App-wide constants
 └── types/
-    └── index.ts               # TypeScript type definitions
+    └── index.ts                 # TypeScript type definitions
 ```
 
 ---
@@ -70,14 +74,21 @@ For simple components, a single file is acceptable:
 ComponentName.tsx
 ```
 
-### 2. Separation of Concerns
+### 2. Server vs Client Components
+
+- **Server Components** (default): All section components, HomePage, layout
+- **Client Components** (`'use client'`): Only components that use hooks (useState, useEffect)
+  - `Header.tsx` — scroll detection, mobile menu state
+  - `ContactSection.tsx` — form state management
+
+### 3. Separation of Concerns
 
 - **Content lives in `/content/i18n/`** — Never hardcode text in components
 - **Styling via Tailwind classes** — No inline styles, no CSS modules
 - **Logic in hooks or utils** — Keep components focused on rendering
 - **Types in dedicated files** — For complex components
 
-### 3. Component Guidelines
+### 4. Component Guidelines
 
 **Do:**
 - Use functional components with TypeScript
@@ -106,6 +117,7 @@ ComponentName.tsx
 | Constants | camelCase file, UPPER_SNAKE vars | `constants.ts` → `API_URL` |
 | Types | PascalCase with suffix | `ButtonProps`, `UserType` |
 | i18n keys | dot.notation | `hero.title`, `solutions.cta` |
+| API routes | `route.ts` inside folder | `app/api/contact/route.ts` |
 
 ### Component Props
 
@@ -138,37 +150,42 @@ Order classes consistently:
 ```json
 {
   "nav": {
-    "solutions": "Solutions",
-    "factory": "Factory",
+    "solutions": "Servicios",
+    "pricing": "Precios",
+    "factory": "Productos",
     "contact": "Contacto"
   },
   "hero": {
-    "tagline": "Innovando el futuro, mejorando el presente.",
-    "description": "Somos una empresa de tecnología...",
-    "cta": "Agenda una llamada"
-  },
-  "solutions": {
-    "title": "Dinnartec Solutions",
-    "subtitle": "Optimizamos negocios con tecnología e IA."
+    "title": "Desarrollamos aplicaciones personalizadas para tu negocio",
+    "description": "Ahorra tiempo y dinero automatizando procesos...",
+    "cta": "Quiero ahorrar tiempo y dinero"
   }
 }
 ```
 
 ### Usage in Components
 
-```typescript
-import { useTranslations } from '@/lib/i18n'
+Translations are resolved at the page level and passed as props:
 
-export function HeroSection() {
-  const t = useTranslations()
-  
-  return (
-    <section>
-      <h1>{t('hero.tagline')}</h1>
-      <p>{t('hero.description')}</p>
-    </section>
-  )
-}
+```typescript
+// In page.tsx (Server Component)
+import { getTranslations } from '@/lib/i18n'
+const t = getTranslations('es')
+
+// In HomePage.tsx
+<HeroSection
+  lang={lang}
+  translations={{
+    title: t('hero.title'),
+    description: t('hero.description'),
+  }}
+/>
+```
+
+For arrays:
+
+```typescript
+t.array('about.pillarItems') // Returns typed array
 ```
 
 ---
@@ -178,26 +195,18 @@ export function HeroSection() {
 ### Design Tokens
 
 ```css
-/* In globals.css or Tailwind config */
-
-/* Colors - Black & White only for now */
+/* In globals.css */
 --color-primary: #000000;
 --color-background: #ffffff;
 --color-text: #000000;
 --color-text-muted: #666666;
 --color-border: #e5e5e5;
-
-/* Typography */
---font-sans: 'Inter', system-ui, sans-serif;
-
-/* Spacing scale */
---section-padding-y: 5rem;      /* 80px */
---section-padding-y-lg: 7.5rem; /* 120px */
-
-/* Container */
---container-max-width: 1200px;
---container-padding: 1.5rem;    /* 24px */
 ```
+
+### Typography
+
+- **Display font:** Syne (headings)
+- **Body font:** Archivo (text)
 
 ### Responsive Breakpoints
 
@@ -213,32 +222,14 @@ Large: >= 1280px (xl:)
 ```typescript
 import { cn } from '@/lib/utils'
 
-interface ButtonProps {
-  variant?: 'primary' | 'secondary'
-  size?: 'sm' | 'md' | 'lg'
-  className?: string
-  children: React.ReactNode
-}
-
 const variants = {
   primary: 'bg-black text-white hover:bg-gray-800',
   secondary: 'bg-white text-black border border-black hover:bg-gray-50'
 }
 
-const sizes = {
-  sm: 'px-4 py-2 text-sm',
-  md: 'px-6 py-3 text-base',
-  lg: 'px-8 py-4 text-lg'
-}
-
-export function Button({ 
-  variant = 'primary', 
-  size = 'md', 
-  className,
-  children 
-}: ButtonProps) {
+export function Button({ variant = 'primary', className, children }: ButtonProps) {
   return (
-    <button className={cn(variants[variant], sizes[size], className)}>
+    <button className={cn(variants[variant], className)}>
       {children}
     </button>
   )
@@ -252,7 +243,7 @@ export function Button({
 Each landing page section should:
 
 1. Be a standalone component in `/components/sections/`
-2. Accept a `lang` prop for i18n
+2. Accept a `lang` prop and `translations` prop
 3. Use semantic HTML (`<section>`, `<article>`, etc.)
 4. Have consistent vertical padding
 5. Use the container width utility
@@ -261,15 +252,16 @@ Each landing page section should:
 
 ```typescript
 import { Container } from '@/components/layout/Container'
-import { useTranslations } from '@/lib/i18n'
 
 interface SectionProps {
   lang: 'es' | 'en'
+  translations: {
+    label: string
+    title: string
+  }
 }
 
-export function SectionName({ lang }: SectionProps) {
-  const t = useTranslations(lang)
-
+export function SectionName({ translations }: SectionProps) {
   return (
     <section id="section-id" className="py-20 lg:py-28">
       <Container>
@@ -286,33 +278,30 @@ export function SectionName({ lang }: SectionProps) {
 
 ### Contact Form Requirements
 
-- Fields: name, email, message
+- Fields: name, whatsapp, message
 - Validation: client-side with proper error states
-- Submission: send to dinnartec@gmail.com
-- Feedback: loading state, success message, error handling
+- Submission: Opens WhatsApp with pre-filled message
+- Feedback: Redirect to WhatsApp
 
 ### Implementation Pattern
 
 ```typescript
 interface FormData {
   name: string
-  email: string
+  whatsapp: string
   message: string
 }
 
-interface FormState {
-  status: 'idle' | 'loading' | 'success' | 'error'
-  error?: string
-}
+// Form submits by opening WhatsApp URL with message
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`
 ```
 
 ---
 
 ## Performance Guidelines
 
-- Use Astro's static generation by default
-- Only use React for interactive components (form, mobile menu, language toggle)
-- Optimize images with Astro's Image component
+- Pages are statically pre-rendered by default
+- Only use `'use client'` for components with hooks (useState, useEffect)
 - Lazy load below-fold sections if needed
 - Keep bundle size minimal
 
@@ -353,10 +342,10 @@ docs: update README
 ## Development Commands
 
 ```bash
-npm run dev          # Start dev server
+npm run dev          # Start dev server (localhost:3000)
 npm run build        # Build for production
-npm run preview      # Preview production build
-npm run lint         # Run linter
+npm run start        # Start production server
+npm run lint         # Run Next.js linter
 npm run format       # Format code with Prettier
 ```
 
@@ -366,8 +355,8 @@ npm run format       # Format code with Prettier
 
 1. Create component in `/components/sections/NewSection.tsx`
 2. Add translations to both `/content/i18n/es.json` and `/content/i18n/en.json`
-3. Import and add to page files (`index.astro` and `en/index.astro`)
-4. Add navigation link if needed
+3. Import and add to `HomePage.tsx`
+4. Add navigation link in `constants.ts` if needed
 
 ---
 
@@ -389,3 +378,13 @@ npm run format       # Format code with Prettier
 - [ ] Both languages tested (ES + EN)
 - [ ] Accessibility basics checked
 - [ ] No commented code
+
+---
+
+## Related Documentation
+
+For company-wide standards and context, see [core-docs](https://github.com/Dinnartec/core-docs):
+
+- `/company/` — Company identity, verticals, principles
+- `/standards/` — Code style, git conventions, naming
+- `/projects/core/core-landing-web.md` — Project overview
