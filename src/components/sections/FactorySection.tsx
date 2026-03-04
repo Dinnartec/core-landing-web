@@ -1,6 +1,6 @@
 import { HiArrowRight } from 'react-icons/hi'
 import { Container } from '@/components/layout/Container'
-import type { Locale, FormState } from '@/types'
+import type { Locale } from '@/types'
 
 // Product type
 type Product = {
@@ -8,6 +8,7 @@ type Product = {
   description: string
   link: string
   screenshot: string
+  status: 'available' | 'development'
 }
 
 interface FactorySectionProps {
@@ -22,6 +23,7 @@ interface FactorySectionProps {
     status: string
     badge: string
     viewProduct: string
+    inDevelopment: string
     products: Product[]
   }
 }
@@ -69,18 +71,27 @@ export function FactorySection({ translations }: FactorySectionProps) {
                     className="w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                  <span className={`absolute top-3 right-3 px-3 py-1 font-body text-[10px] font-medium uppercase tracking-widest ${product.status === 'development' ? 'bg-white/20 text-white/80 backdrop-blur-sm' : 'bg-white text-black'}`}>
+                    {product.status === 'development' ? translations.inDevelopment : translations.badge}
+                  </span>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="font-display text-2xl font-bold text-white mb-2">{product.name}</h3>
                   <p className="font-body text-sm text-white/70 leading-relaxed mb-6 flex-1">
                     {product.description}
                   </p>
-                  <a
-                    href={product.link}
-                    className="inline-flex items-center text-xs font-medium uppercase tracking-widest text-white/80 hover:text-white transition-colors"
-                  >
-                    {translations.viewProduct} <HiArrowRight className="ml-2 h-4 w-4" />
-                  </a>
+                  {product.status === 'available' ? (
+                    <a
+                      href={product.link}
+                      className="inline-flex items-center text-xs font-medium uppercase tracking-widest text-white/80 hover:text-white transition-colors"
+                    >
+                      {translations.viewProduct} <HiArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center text-xs font-medium uppercase tracking-widest text-white/40">
+                      {translations.inDevelopment}
+                    </span>
+                  )}
                 </div>
               </div>
             ))}

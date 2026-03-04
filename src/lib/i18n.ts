@@ -34,7 +34,3 @@ export function getTranslations(locale: Locale) {
 
   return translate
 }
-
-export function useTranslations(locale: Locale) {
-  return getTranslations(locale)
-}

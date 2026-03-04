@@ -135,24 +135,28 @@
     "status": "Explora nuestros productos:",
     "badge": "Disponibles",
     "viewProduct": "Ver Producto",
+    "inDevelopment": "En desarrollo",
     "products": [
       {
         "name": "Trives",
         "description": "Plataforma integral para el manejo de servicios y comunidades.",
         "link": "#trives",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives"
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Trives",
+        "status": "development"
       },
       {
         "name": "AF Colombia",
         "description": "Plataforma completa para el manejo del backoffice, contabilidad y finanzas.",
         "link": "#afcolombia",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia"
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=AF+Colombia",
+        "status": "development"
       },
       {
         "name": "Real Estate OS",
         "description": "Plataforma para manejo de venta de bienes raíces, CRM y más.",
         "link": "#realestate",
-        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS"
+        "screenshot": "https://placehold.co/600x400/171717/ededed?text=Real+Estate+OS",
+        "status": "development"
       }
     ]
   },

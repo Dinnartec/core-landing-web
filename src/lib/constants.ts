@@ -2,6 +2,7 @@ export const SITE_NAME = 'Dinnartec'
 export const SITE_DOMAIN = 'dinnartec.com'
 
 export const CONTACT_EMAIL = 'dinnartec@gmail.com'
+export const WHATSAPP_NUMBER = '573154821335'
 export const CALENDLY_URL = 'https://calendly.com/dinnartec'
 
 export const SOCIAL_LINKS = {
@@ -15,6 +16,8 @@ export const DEFAULT_LOCALE = 'es'
 
 export const NAV_LINKS = [
   { key: 'solutions', href: '#solutions' },
+  { key: 'pricing', href: '#pricing' },
   { key: 'factory', href: '#factory' },
+  { key: 'labs', href: '#labs' },
   { key: 'contact', href: '#contact' },
 ] as const
