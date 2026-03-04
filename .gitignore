@@ -5,8 +5,9 @@ node_modules/
 dist/
 .output/
 
-# Astro
-.astro/
+# Next.js
+.next/
+out/
 
 # Environment variables
 .env

@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi'
 import { cn } from '@/lib/utils'

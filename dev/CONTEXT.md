@@ -31,8 +31,8 @@ This is the main landing page for Dinnartec. The site is bilingual (ES default /
 
 ## Tech Stack
 
-- **Framework:** Astro
-- **UI Library:** React (for interactive components)
+- **Framework:** Next.js 16 (App Router)
+- **UI Library:** React 19
 - **Styling:** Tailwind CSS
 - **i18n:** Custom implementation with JSON files
 - **Hosting:** Vercel

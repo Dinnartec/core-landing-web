@@ -1,7 +1,9 @@
-import type { APIRoute } from 'astro'
+import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(import.meta.env.RESEND_API_KEY)
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 function escapeHtml(str: string): string {
   return str
@@ -12,17 +14,15 @@ function escapeHtml(str: string): string {
     .replace(/'/g, '&#039;')
 }
 
-export const prerender = false
-
-export const POST: APIRoute = async ({ request }) => {
+export async function POST(request: Request) {
   try {
     const body = await request.json()
     const { name, email, message } = body
 
     if (!name || !email || !message) {
-      return new Response(
-        JSON.stringify({ error: 'Missing required fields' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'Missing required fields' },
+        { status: 400 }
       )
     }
 
@@ -30,7 +30,7 @@ export const POST: APIRoute = async ({ request }) => {
     const safeEmail = escapeHtml(email)
     const safeMessage = escapeHtml(message)
 
-    const { error } = await resend.emails.send({
+    const { error } = await getResend().emails.send({
       from: 'Dinnartec Web <onboarding@resend.dev>',
       to: ['dinnartec@gmail.com'],
       replyTo: email,
@@ -46,21 +46,18 @@ export const POST: APIRoute = async ({ request }) => {
 
     if (error) {
       console.error('Resend error:', error)
-      return new Response(
-        JSON.stringify({ error: 'Failed to send email' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'Failed to send email' },
+        { status: 500 }
       )
     }
 
-    return new Response(
-      JSON.stringify({ success: true }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
-    )
+    return NextResponse.json({ success: true })
   } catch (err) {
     console.error('API error:', err)
-    return new Response(
-      JSON.stringify({ error: 'Internal server error' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
     )
   }
 }

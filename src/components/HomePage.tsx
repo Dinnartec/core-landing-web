@@ -1,0 +1,222 @@
+import { Header } from '@/components/layout'
+import {
+  HeroSection,
+  ExperienceBanner,
+  AboutSection,
+  SolutionsSection,
+  PricingSection,
+  FactorySection,
+  LabsSection,
+  ContactSection,
+  Footer,
+} from '@/components/sections'
+import { getTranslations } from '@/lib/i18n'
+import type { Locale } from '@/types'
+
+interface HomePageProps {
+  lang: Locale
+}
+
+export function HomePage({ lang }: HomePageProps) {
+  const t = getTranslations(lang)
+
+  return (
+    <>
+      <Header
+        lang={lang}
+        translations={{
+          solutions: t('nav.solutions'),
+          pricing: t('nav.pricing'),
+          factory: t('nav.factory'),
+          labs: t('nav.labs'),
+          contact: t('nav.contact'),
+        }}
+      />
+
+      <main>
+        <HeroSection
+          lang={lang}
+          translations={{
+            title: t('hero.title'),
+            tagline: t('hero.tagline'),
+            description: t('hero.description'),
+            cta: t('hero.cta'),
+            learnMore: t('hero.learnMore'),
+            badge: t('hero.badge'),
+          }}
+        />
+
+        <ExperienceBanner
+          lang={lang}
+          translations={{
+            text: t('socialProof.text'),
+          }}
+        />
+
+        <AboutSection
+          lang={lang}
+          translations={{
+            label: t('about.label'),
+            title: t('about.title'),
+            description: t('about.description'),
+            content: t('about.content'),
+            pillars: t('about.pillars'),
+            pillarItems: t.array('about.pillarItems'),
+          }}
+        />
+
+        <SolutionsSection
+          lang={lang}
+          translations={{
+            label: t('solutions.label'),
+            titlePrefix: t('solutions.titlePrefix'),
+            titleHighlight: t('solutions.titleHighlight'),
+            subtitle: t('solutions.subtitle'),
+            description: t('solutions.description'),
+            tagline: t('solutions.tagline'),
+            cta: t('solutions.cta'),
+            steps: {
+              diagnosis: {
+                title: t('solutions.steps.diagnosis.title'),
+                description: t('solutions.steps.diagnosis.description'),
+              },
+              sprint: {
+                title: t('solutions.steps.sprint.title'),
+                description: t('solutions.steps.sprint.description'),
+              },
+              support: {
+                title: t('solutions.steps.support.title'),
+                description: t('solutions.steps.support.description'),
+              },
+            },
+          }}
+        />
+
+        <PricingSection
+          lang={lang}
+          translations={{
+            label: t('pricing.label'),
+            title: t('pricing.title'),
+            subtitle: t('pricing.subtitle'),
+            note: t('pricing.note'),
+            diagnosis: {
+              name: t('pricing.diagnosis.name'),
+              description: t('pricing.diagnosis.description'),
+              cta: t('pricing.diagnosis.cta'),
+              tiers: {
+                diagnosis: {
+                  name: t('pricing.diagnosis.tiers.diagnosis.name'),
+                  price: t('pricing.diagnosis.tiers.diagnosis.price'),
+                  duration: t('pricing.diagnosis.tiers.diagnosis.duration'),
+                  description: t('pricing.diagnosis.tiers.diagnosis.description'),
+                  features: t.array('pricing.diagnosis.tiers.diagnosis.features'),
+                },
+                implementation: {
+                  name: t('pricing.diagnosis.tiers.implementation.name'),
+                  price: t('pricing.diagnosis.tiers.implementation.price'),
+                  duration: t('pricing.diagnosis.tiers.implementation.duration'),
+                  description: t('pricing.diagnosis.tiers.implementation.description'),
+                  features: t.array('pricing.diagnosis.tiers.implementation.features'),
+                },
+              },
+            },
+            retainer: {
+              name: t('pricing.retainer.name'),
+              description: t('pricing.retainer.description'),
+              cta: t('pricing.retainer.cta'),
+              tiers: {
+                base: {
+                  name: t('pricing.retainer.tiers.base.name'),
+                  price: t('pricing.retainer.tiers.base.price'),
+                  duration: t('pricing.retainer.tiers.base.duration'),
+                  description: t('pricing.retainer.tiers.base.description'),
+                  features: t.array('pricing.retainer.tiers.base.features'),
+                },
+              },
+            },
+          }}
+        />
+
+        <FactorySection
+          lang={lang}
+          translations={{
+            label: t('factory.label'),
+            titlePrefix: t('factory.titlePrefix'),
+            titleHighlight: t('factory.titleHighlight'),
+            subtitle: t('factory.subtitle'),
+            description: t('factory.description'),
+            content: t('factory.content'),
+            status: t('factory.status'),
+            badge: t('factory.badge'),
+            viewProduct: t('factory.viewProduct'),
+            products: t.array('factory.products'),
+          }}
+        />
+
+        <LabsSection
+          lang={lang}
+          translations={{
+            label: t('labs.label'),
+            titlePrefix: t('labs.titlePrefix'),
+            titleHighlight: t('labs.titleHighlight'),
+            subtitle: t('labs.subtitle'),
+            description: t('labs.description'),
+            content: t('labs.content'),
+            status: t('labs.status'),
+            badge: t('labs.badge'),
+            areas: {
+              experimental: {
+                title: t('labs.areas.experimental.title'),
+                description: t('labs.areas.experimental.description'),
+              },
+              emerging: {
+                title: t('labs.areas.emerging.title'),
+                description: t('labs.areas.emerging.description'),
+              },
+              capabilities: {
+                title: t('labs.areas.capabilities.title'),
+                description: t('labs.areas.capabilities.description'),
+              },
+            },
+          }}
+        />
+
+        <ContactSection
+          lang={lang}
+          translations={{
+            label: t('contact.label'),
+            title: t('contact.title'),
+            description: t('contact.description'),
+            cta: t('contact.cta'),
+            form: {
+              name: t('contact.form.name'),
+              whatsapp: t('contact.form.whatsapp'),
+              message: t('contact.form.message'),
+              submit: t('contact.form.submit'),
+              success: t('contact.form.success'),
+              error: t('contact.form.error'),
+            },
+            alternative: t('contact.alternative'),
+          }}
+        />
+      </main>
+
+      <Footer
+        lang={lang}
+        translations={{
+          tagline: t('footer.tagline'),
+          navigation: t('footer.navigation'),
+          connect: t('footer.connect'),
+          copyright: t('footer.copyright'),
+        }}
+        navTranslations={{
+          solutions: t('nav.solutions'),
+          pricing: t('nav.pricing'),
+          factory: t('nav.factory'),
+          labs: t('nav.labs'),
+          contact: t('nav.contact'),
+        }}
+      />
+    </>
+  )
+}
