@@ -27,8 +27,8 @@ RESEND_API_KEY=re_xxxxxx
 
 ## Stack
 
-- **Astro** — Framework
-- **React** — Interactive components
+- **Next.js 16** — Framework (App Router)
+- **React 19** — UI
 - **Tailwind CSS** — Styling
 - **Resend** — Email sending
 - **Vercel** — Hosting
@@ -37,18 +37,20 @@ RESEND_API_KEY=re_xxxxxx
 
 ```
 src/
+├── app/
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # ES page (default)
+│   ├── en/page.tsx        # EN page
+│   └── api/contact/       # API route
 ├── components/
-│   ├── layout/        # Header, Container, Footer
-│   ├── sections/      # Hero, About, Solutions, etc.
-│   └── ui/            # Button, Input, etc.
-├── content/i18n/      # Translations (es.json, en.json)
-├── layouts/           # BaseLayout.astro
-├── lib/               # utils, constants, i18n
-├── pages/
-│   ├── index.astro    # ES page (default)
-│   ├── en/index.astro # EN page
-│   └── api/           # Endpoints (contact form)
-└── styles/            # globals.css
+│   ├── HomePage.tsx       # Shared page content
+│   ├── layout/            # Header, Container, Footer
+│   ├── sections/          # Hero, About, Solutions, etc.
+│   └── ui/                # Button, Input, etc.
+├── content/i18n/          # Translations (es.json, en.json)
+├── lib/                   # utils, constants, i18n
+├── styles/                # globals.css
+└── types/                 # TypeScript types
 ```
 
 ## i18n
